@@ -1,0 +1,7 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# compiled images that R code creates but because Rcode is in Rmd you dont need to commit this
+_bookdown_files
