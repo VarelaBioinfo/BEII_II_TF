@@ -1,0 +1,5 @@
+book_filename: "BEII_II_TF"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter "
