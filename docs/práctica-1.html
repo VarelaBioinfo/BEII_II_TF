@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Práctica 1 | Bioinformática y estadística II Módulo II</title>
+  <meta name="description" content="Módulo impartido por el profesor Jacques van Helden" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Práctica 1 | Bioinformática y estadística II Módulo II" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Módulo impartido por el profesor Jacques van Helden" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Práctica 1 | Bioinformática y estadística II Módulo II" />
+  
+  <meta name="twitter:description" content="Módulo impartido por el profesor Jacques van Helden" />
+  
+
+<meta name="author" content="Alfredo Varela Vega" />
+
+
+<meta name="date" content="2021-03-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="factores-de-transcripción.html"/>
+<link rel="next" href="methods.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Bioinformática y Estadística II Módulo II</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Composición del curso</a></li>
+<li class="chapter" data-level="2" data-path="factores-de-transcripción.html"><a href="factores-de-transcripción.html"><i class="fa fa-check"></i><b>2</b> Factores de transcripción</a><ul>
+<li class="chapter" data-level="2.1" data-path="factores-de-transcripción.html"><a href="factores-de-transcripción.html#what-is-transcription-factor"><i class="fa fa-check"></i><b>2.1</b> What is transcription factor?</a></li>
+<li class="chapter" data-level="2.2" data-path="factores-de-transcripción.html"><a href="factores-de-transcripción.html#técnicas-para-establecer-las-uniones-de-los-factores"><i class="fa fa-check"></i><b>2.2</b> Técnicas para establecer las uniones de los factores</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="práctica-1.html"><a href="práctica-1.html"><i class="fa fa-check"></i><b>3</b> Práctica 1</a><ul>
+<li class="chapter" data-level="3.1" data-path="práctica-1.html"><a href="práctica-1.html#introduction"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="práctica-1.html"><a href="práctica-1.html#choosing-a-tf-on-regulondb"><i class="fa fa-check"></i><b>3.2</b> Choosing a TF on RegulonDB</a></li>
+<li class="chapter" data-level="3.3" data-path="práctica-1.html"><a href="práctica-1.html#getting-all-upstream-promoter-sequences-of-e.coli"><i class="fa fa-check"></i><b>3.3</b> Getting all upstream (“promoter”) sequences of E.coli</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="práctica-1.html"><a href="práctica-1.html#coverage-of-the-annotated-binding-sites-by-the-reference-motif"><i class="fa fa-check"></i><b>3.3.1</b> Coverage of the annotated binding sites by the reference motif</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="práctica-1.html"><a href="práctica-1.html#binding-site-prediction-in-all-promoters"><i class="fa fa-check"></i><b>3.4</b> Binding site prediction in all promoters</a></li>
+<li class="chapter" data-level="3.5" data-path="práctica-1.html"><a href="práctica-1.html#negative-control-1-scan-artificial-sequences-with-your-motif"><i class="fa fa-check"></i><b>3.5</b> Negative control 1: scan artificial sequences with your motif</a></li>
+<li class="chapter" data-level="3.6" data-path="práctica-1.html"><a href="práctica-1.html#negative-control-2-permute-the-columns-of-the-matrix"><i class="fa fa-check"></i><b>3.6</b> Negative control 2: permute the columns of the matrix</a></li>
+<li class="chapter" data-level="3.7" data-path="práctica-1.html"><a href="práctica-1.html#matrix-based-pattern-matching"><i class="fa fa-check"></i><b>3.7</b> Matrix-based pattern matching</a></li>
+<li class="chapter" data-level="3.8" data-path="práctica-1.html"><a href="práctica-1.html#oligo-analysis"><i class="fa fa-check"></i><b>3.8</b> Oligo analysis</a></li>
+<li class="chapter" data-level="3.9" data-path="práctica-1.html"><a href="práctica-1.html#seq-proba"><i class="fa fa-check"></i><b>3.9</b> Seq-proba</a></li>
+<li class="chapter" data-level="3.10" data-path="práctica-1.html"><a href="práctica-1.html#convert-background-modell"><i class="fa fa-check"></i><b>3.10</b> Convert Background modell</a></li>
+<li class="chapter" data-level="3.11" data-path="práctica-1.html"><a href="práctica-1.html#position-scanning-matrix"><i class="fa fa-check"></i><b>3.11</b> Position scanning matrix</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
+<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a><ul>
+<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
+<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Bioinformática y estadística II Módulo II</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="práctica-1" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> Práctica 1</h1>
+<p><a href="http://jvanheld.github.io/LCG_BEII/practicals/motif_search_RegulonDB/motif_search_RegulonDB.html#collective_table_for_the_2020_practical">Ejercicios TF</a></p>
+<div id="introduction" class="section level2">
+<h2><span class="header-section-number">3.1</span> Introduction</h2>
+<p>The goal of this practical is to evaluate the respective performances of two modes of representations for transcription factor binding motifs (TFBMs) to predict transcription factor binding sites (TFBS).</p>
+<p>As reference genome we will use the strain <strong>Escherichia_coli_GCF_000005845.2_ASM584v2</strong>.
+- you can type <code>ASM584</code> in RSTAT web site</p>
+</div>
+<div id="choosing-a-tf-on-regulondb" class="section level2">
+<h2><span class="header-section-number">3.2</span> Choosing a TF on RegulonDB</h2>
+<ul>
+<li>Each student will choose one transcription factor of interest having a reasonable number of binding sites (between 10 and 25).</li>
+<li>I choose <code>Nac</code></li>
+</ul>
+<p><a href="http://regulondb.ccg.unam.mx/regulon?term=ECK120011265&amp;format=jsp&amp;objectName=Regulon&amp;organism=ECK12&amp;type=regulon#Multifun_Terms_of_regulated_genes">URL to Nac DNA-binding transcriptional dual regulator regulonDB</a></p>
+<ul>
+<li>Conectarse a rsat.eu
+<a href="http://pedagogix-tagc.univ-mrs.fr/rsat/RSAT_portal.html">rstat.eu</a></li>
+</ul>
+</div>
+<div id="getting-all-upstream-promoter-sequences-of-e.coli" class="section level2">
+<h2><span class="header-section-number">3.3</span> Getting all upstream (“promoter”) sequences of E.coli</h2>
+<p>Open the tool retrieve-seq</p>
+<p>Select organism <strong>Escherichia_coli_GCF_000005845.2_ASM584v2</strong></p>
+<p>Set all parameters to get the non-coding sequences located upstream of all genes with a maximal distance of 400 bp from the gene start (i.e. relative coordinates from -1 to -400).</p>
+<ul>
+<li><span class="math inline">\(-1\)</span> es el nucleótido antes del ATG</li>
+<li>Prevent overlap
+<ul>
+<li>operones, las distancias intergénicas son muy cortas (10 bp)</li>
+<li>El codón de termino</li>
+<li>Casi todos están en sitios no codificantes</li>
+</ul></li>
+<li>Label se puede elegir varios
+<ul>
+<li>gene name</li>
+</ul></li>
+</ul>
+<p>Checo las secuencias</p>
+<ul>
+<li>El gen previo</li>
+<li>El numero de bases del fasta es que tanto se sobrelapan los genes o cuantas letras tienen de diferencia
+<ul>
+<li>Se ven los operones por ejemplo el de Histidina</li>
+</ul></li>
+<li>Ahora tenemos todas las secuecnias de los genes río arriba</li>
+</ul>
+<p>Copy the URL of the result file and save it in a text file (we will use it several times below)
+<a href="http://embnet.ccg.unam.mx/rsat//tmp/apache/2021/03/01/retrieve-seq_2021-03-01.111023_VY7mAR.fasta">Result</a></p>
+<div id="coverage-of-the-annotated-binding-sites-by-the-reference-motif" class="section level3">
+<h3><span class="header-section-number">3.3.1</span> Coverage of the annotated binding sites by the reference motif</h3>
+<p>The question addressed here is to evaulate the relative performances of the consensus and PSSM to predict TFBSs and identify the target genes of our transcription factor of interest.</p>
+<p>Note that the TFBS are expected to be found in the promoters of operon leader genes, and not in the upstream sequences of the other target genes (the genes following the leader in an operon). Thus, the reference gene set for this analysis are the leader genes of the operons regulated by our TF of interest.</p>
+<p>Use dna-pattern to scan the annotated binding sites with the degenerate consensus.</p>
+<p>Comentarios</p>
+<ul>
+<li>quitamos los sequence limits pues en la mayoría de genes no hay sitios
+<ul>
+<li>Los resultados te dicen cuantos sitios hay para tu motivo</li>
+<li>cómo explicas los sitios documentados en RegulonDB
+<ul>
+<li>se construye una matriz posición peso</li>
+<li>De ahí se construye el consensus</li>
+<li>Tengo un consensus que fue constuido por 15 sitios y solo encuentro 1 sitio en la búsqueda de Rstat
+<ul>
+<li>cuando yo impongo una c en la primera poisión entonces yo refuto todas las que tienen una A c o t</li>
+<li>en la siguiente necesito una c y lugo una A</li>
+<li>nunca se deben utilizar consensus para encontrar regiones
+<ul>
+<li>Es solo una forma de hablar de un sitio pero no para buscar</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>En Regulon DB anoto los stios</li>
+<li>Consesnsus</li>
+</ul>
+<p><a href="http://embnet.ccg.unam.mx/rsat/dna-pattern.cgi">Result</a></p>
+<p>Use matrix-scan to scan the annotated binding sites with the RegulonDB matrix
+<a href="http://embnet.ccg.unam.mx/rsat/matrix-scan.cgi">Result</a></p>
+<p>Interpretation:</p>
+<p>Compute the coverage rate of the two respective modes of representation (consensus versus matrix).</p>
+<p>Compare the values and comment the results.</p>
+</div>
+</div>
+<div id="binding-site-prediction-in-all-promoters" class="section level2">
+<h2><span class="header-section-number">3.4</span> Binding site prediction in all promoters</h2>
+<p>Use the same tools (dna-pattern and matrix-scan) to predict binding sites in all the promoters of E.coli.</p>
+<p>For matrix-scan, run the analysis with a threshold of p-value of either 0.001 or 0.0001.</p>
+<p>Interpretation:</p>
+<p>Compare the number of matches obtained in these respective searches.</p>
+<p>With the respective p-values used for the scanning, how many matches would you expect by chance ?</p>
+<p>Comment the results.</p>
+</div>
+<div id="negative-control-1-scan-artificial-sequences-with-your-motif" class="section level2">
+<h2><span class="header-section-number">3.5</span> Negative control 1: scan artificial sequences with your motif</h2>
+<p>As a negative control, we will run exactly the same analysis in sequences where there should be no specific site for our transcription factor. For this, we will generate</p>
+<p>RSAT random-sequences, generate random sequences</p>
+<p>use the same background model as you used to scan the promoter sequences in the above steps</p>
+<p>use the promoter sequences retrieved above as model in order to obtain random sequences of the same sizes.</p>
+<p>Run the same analysis as above (all promoters)</p>
+<p>Interpretation:</p>
+<p>How many sites were predicted?
+How many sites would be expected by chance according to your parameters?
+Do the two numbers correspond?</p>
+</div>
+<div id="negative-control-2-permute-the-columns-of-the-matrix" class="section level2">
+<h2><span class="header-section-number">3.6</span> Negative control 2: permute the columns of the matrix</h2>
+<p>A second type of negative control consists in scanning the actual biological sequences (all the promoters of E.coli, as analysed above), but to permute the columns of the PSSM. Such a permutation between the columns preserves statistical properties of the matrix (number of occurrences, information content of each column, total information content) but looses the biological information (the specific sequences recognized by the transcription factor).</p>
+<p>Use the tool permute-matrix in order to generate 10 randomized copies of the motif</p>
+<p>Send these randomiazed matrices to convert-matrix and check their logo.</p>
+<p>Run the same analyses as above with the randomized matrix</p>
+<p>Compare the number of sites obtained between the RegulonDB matrix and the randomized matrix derived from it.</p>
+</div>
+<div id="matrix-based-pattern-matching" class="section level2">
+<h2><span class="header-section-number">3.7</span> Matrix-based pattern matching</h2>
+<p>Como se utiliza para escanear sitios potenciales</p>
+<ul>
+<li>Transformamos los conteos convirtiendola en una matriz de frecuencia</li>
+<li>Cada valor entre la suma de toda la columna</li>
+</ul>
+<p>Si en la primera posicion tengo una C me da $.25% $ de pertencer a un sitio</p>
+<ul>
+<li>Si en la segunda es T entonces es <span class="math inline">\(0.13\%\)</span>
+Es la suma de las probabilidades de cada columna</li>
+<li>Existen columnas en donde la probabilidad de encontrar una G es <span class="math inline">\(0\%\)</span> entonces es imposible que se una si hay una G pues solo se encontro con <span class="math inline">\(1 \%\)</span> la T.
+<ul>
+<li>No es lo que quiero, yo quiero que mi matriz sea más laxa, entonces la suavizo haciendo una pseudo-weight distributed according to residue priors</li>
+</ul>
+<span class="math inline">\(f_i,j= (n_i,j +k/A)/sum()\)</span></li>
+</ul>
+<p>Se saca el producto pues se asume que son independientes</p>
+<p>Probabilidad dado el motivo
+<span class="math inline">\(P(S|M)\)</span>
+Probabilidad dado el background
+<span class="math inline">\(P(S|B)\)</span></p>
+<ul>
+<li>Se toma el máximo de cada columna para calcular una probabilidad máxima</li>
+<li>Se puede calcular también el peor score</li>
+</ul>
+<p>En el genoma de coli más o menos tienen todas 0.25% de probabilidad</p>
+</div>
+<div id="oligo-analysis" class="section level2">
+<h2><span class="header-section-number">3.8</span> Oligo analysis</h2>
+<ul>
+<li>le puedes dar secuencias y decirle que calcule la frecuencia de nucleótidos y dinucleótidos o kmers 1-8</li>
+<li>Te da las frecuencias observadas para cada nucleótido</li>
+<li>la riqueza de a se refleja en la riqueza de dinucleotidos pero no es estricto</li>
+<li>los trinucleotidos de tt aa</li>
+<li>los tetranucleotidos son interesantes
+<ul>
+<li>existe un tetranucleótido muy evitado en e.coli</li>
+<li>ctag 0.00046 tiene 266 apariciones comparado con 766 que es el siguiente</li>
+</ul></li>
+</ul>
+</div>
+<div id="seq-proba" class="section level2">
+<h2><span class="header-section-number">3.9</span> Seq-proba</h2>
+<ul>
+<li>puedo calcular la probabilidad de una secuencia dado un modelo</li>
+<li>ejemplo ATGCGTAAAGCT</li>
+<li>dado el modelo ASM584</li>
+<li>proba_b tiene una probabilidad de <span class="math inline">\(10^{-8}\)</span></li>
+<li>Si la comparo con Saccharomyces cerevisiae
+<ul>
+<li>modelo de markov 0 es la independencia o modelo de bernoulli</li>
+</ul></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Tenemos una matriz de conteos</li>
+<li>Calculamos auna matriz de frecuecnia a partir de la de conteos (puede considerarse como un modelo de proababilidad pero muy restrictivo pues los que tienen 0 los determina como imposible de encontrar )</li>
+<li>Matriz de frecuencias corregidas</li>
+</ol>
+<ul>
+<li>Estimammos la probabilidad de una secuecnia dada el modelo</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>Dado un modelo de bernoulli (independencia )<br />
+</li>
+</ol>
+<ul>
+<li>Solo multiplico la probabilidad de cada residudo dado el modelo de background (el peso de cada nucleótido ene le genom)</li>
+<li>puedo hacer el cociente ponderado</li>
+</ul>
+<p><span class="math inline">\(ln{frac{P(S|M)}{P(s)}\)</span></p>
+<p>la suma de los logaritmos es equivalente a la multiplicación de las probabilidades</p>
+</div>
+<div id="convert-background-modell" class="section level2">
+<h2><span class="header-section-number">3.10</span> Convert Background modell</h2>
+<p>Matriz de transición entre un nucleótido y el siguiente
+Puedo calcular la probabilidad de un resiudo dado el residuo que le sigue
+cuando tengo una T la probabilidad de que despues exista una a es de .24 mientras que la probabilidad de que le siga otra t entonces es de 0.35</p>
+<p>En RSAT metazoa background puedo buscar homo sapeins GRCh38
+calculo el modelo de markov de orden 1</p>
+<ul>
+<li>en genomas de animales hay un CpG
+<ul>
+<li>se encuentran en promotores con riqueza de CpG</li>
+<li>son sitios de metilación del DNA que inactivan regiones enteras del cromosoma del humano</li>
+<li>regiones en donde hay muchas CpG están muy inactivadas por default</li>
+<li>es propio de los vertebrados</li>
+<li>Hay fuertes dependencias entre nucleótidos, generalementa a una a le precede otra a
+<ul>
+<li>comportamiento agregantivo de aa y de tt</li>
+<li>en e.coli hay un tetra nucleótido evidado</li>
+<li>en homo sapiens hay un dinucleotido evitado CpG</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="position-scanning-matrix" class="section level2">
+<h2><span class="header-section-number">3.11</span> Position scanning matrix</h2>
+<p>Acepto un falso positivo cada 10,000 pares de bases y escane 1 millon 47 mill
+Espero 104</p>
+<p>Nb of known operon leader genes amond predictions with pssm
+son los que sí encontré d elos operones que salen en regulon db</p>
+<p>operon sensitivity with PSSSM
+son los que encontre / todos los que existen</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="factores-de-transcripción.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="methods.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["BEII_II_TF.pdf", "BEII_II_TF.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
