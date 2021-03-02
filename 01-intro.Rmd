@@ -1,21 +1,23 @@
-# Introduction {#intro}
+# Factores de transcripción 
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+## What is transcription factor?
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+La manera de reconocer el DNA es mediante interacciones débiles no covalentes
+- **Binding site**
+  - denota el segmento particular genómico o atificial en donde el factor se une
+- **Binding motif**
+  - Descripción genérica de la escecificidad de la unión obtenida por resumir la información de una colección de sitios
 
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
+## Técnicas para establecer las uniones de los factores 
 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+- Cristalografía es muy precisa pero dificil de hacer 
+- SELEX
+- DNAse footprint
+- Gel shift (EMSA)
+- ChIP seq
 
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
+## Position-specific scoring matrix (PSSM)
 
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+- Renglones es el residuo 
+- Columnas son las posiciones 
+
