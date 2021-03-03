@@ -1,0 +1,168 @@
+; dna-pattern  -v 1 -pl $RSAT/public_html/tmp/www-data/2021/03/02/dna-pattern_2021-03-02.214855_RwlyhX.pat -i $RSAT/public_html/tmp/www-data/2021/03/02/retrieve-seq_2021-03-02.202238_LWbfM5.fasta.fasta.fasta -format fasta -return sites -origin -0 -N 4 -return limits -noov -2str -subst 0
+; Citation: van Helden et al. (2000). Yeast 16(2), 177-187.
+; Input file           	$RSAT/public_html/tmp/www-data/2021/03/02/retrieve-seq_2021-03-02.202238_LWbfM5.fasta.fasta.fasta
+; Input format         	fasta
+; Pattern file         	$RSAT/public_html/tmp/www-data/2021/03/02/dna-pattern_2021-03-02.214855_RwlyhX.pat
+; Search method        	regexp
+; Threshold            	0
+; Allowed substitutions	0
+; Return fields
+;                     	limits
+;                     	sites
+; Patterns
+; 	seq	id	score
+; 	acgtgc	acgtgc|gcacgt	4.08
+; 	cacgtgg	cacgtgg|ccacgtg	2.43
+; 	cacgtggg	cacgtggg|cccacgtg	2.13
+; 	acgtgg	acgtgg|ccacgt	1.62
+; 	cccacg	cccacg|cgtggg	1.27
+; 	cgcacg	cgcacg|cgtgcg	1.21
+; 	acgtggg	acgtggg|cccacgt	1.17
+; 	acgtgcg	acgtgcg|cgcacgt	1.09
+; 	cacgtg	cacgtg|cacgtg	0.93
+; 	cgtgcga	cgtgcga|tcgcacg	0.63
+; 	tgccaa	tgccaa|ttggca	0.19
+; 
+; Matching positions
+; PatID	Strand	Pattern	SeqID	Start	End	matching_seq	Score
+START_END	DR	-	PHO11	-800	-1	-	0.00
+acgtgc|gcacgt	R	acgtgc	PHO11	-215	-210	tgtgACGTGCggaa	4.08
+cacgtgg|ccacgtg	D	cacgtgg	PHO11	-283	-277	ttcaCACGTGGgttt	2.43
+cacgtggg|cccacgtg	D	cacgtggg	PHO11	-283	-276	ttcaCACGTGGGttta	2.13
+acgtgg|ccacgt	D	acgtgg	PHO11	-282	-277	tcacACGTGGgttt	1.62
+acgtgg|ccacgt	R	acgtgg	PHO11	-417	-412	gaaaACGTGGtaat	1.62
+cccacg|cgtggg	R	cccacg	PHO11	-501	-496	gacaCCCACGatga	1.27
+cccacg|cgtggg	R	cccacg	PHO11	-281	-276	taaaCCCACGtgtg	1.27
+cgcacg|cgtgcg	D	cgcacg	PHO11	-216	-211	attcCGCACGtcac	1.21
+acgtggg|cccacgt	D	acgtggg	PHO11	-282	-276	tcacACGTGGGttta	1.17
+acgtgcg|cgcacgt	R	acgtgcg	PHO11	-216	-210	tgtgACGTGCGgaat	1.09
+cacgtg|cacgtg	DR	cacgtg	PHO11	-283	-278	ttcaCACGTGggtt	0.93
+tgccaa|ttggca	D	tgccaa	PHO11	-204	-199	acatTGCCAAattg	0.19
+tgccaa|ttggca	D	tgccaa	PHO11	-138	-133	gaatTGCCAAgtaa	0.19
+START_END	DR	-	PHO3	-446	-1	-	0.00
+START_END	DR	-	PHO5	-800	-1	-	0.00
+acgtgc|gcacgt	R	acgtgc	PHO5	-363	-358	gaaaACGTGCtaat	4.08
+cacgtgg|ccacgtg	D	cacgtgg	PHO5	-253	-247	ctcaCACGTGGgact	2.43
+cacgtggg|cccacgtg	D	cacgtggg	PHO5	-253	-246	ctcaCACGTGGGacta	2.13
+acgtgg|ccacgt	D	acgtgg	PHO5	-252	-247	tcacACGTGGgact	1.62
+cccacg|cgtggg	D	cccacg	PHO5	-604	-599	agtcCCCACGctaa	1.27
+cccacg|cgtggg	R	cccacg	PHO5	-251	-246	tagtCCCACGtgtg	1.27
+cgcacg|cgtgcg	D	cgcacg	PHO5	-583	-578	gtgtCGCACGctct	1.21
+acgtggg|cccacgt	D	acgtggg	PHO5	-252	-246	tcacACGTGGGacta	1.17
+cacgtg|cacgtg	DR	cacgtg	PHO5	-253	-248	ctcaCACGTGggac	0.93
+cgtgcga|tcgcacg	R	cgtgcga	PHO5	-584	-578	agagCGTGCGAcacg	0.63
+tgccaa|ttggca	D	tgccaa	PHO5	-332	-327	acaaTGCCAAaaaa	0.19
+tgccaa|ttggca	D	tgccaa	PHO5	-191	-186	cacaTGCCAAatta	0.19
+tgccaa|ttggca	R	tgccaa	PHO5	-765	-760	ctaaTGCCAAtgtg	0.19
+tgccaa|ttggca	R	tgccaa	PHO5	-263	-258	tgagTGCCAAggtt	0.19
+tgccaa|ttggca	R	tgccaa	PHO5	-163	-158	gcctTGCCAAgtaa	0.19
+START_END	DR	-	PHO88	-688	-1	-	0.00
+cgcacg|cgtgcg	D	cgcacg	PHO88	-238	-233	ggatCGCACGccca	1.21
+cgtgcga|tcgcacg	R	cgtgcga	PHO88	-239	-233	tgggCGTGCGAtccg	0.63
+START_END	DR	-	PHO89	-800	-1	-	0.00
+acgtgc|gcacgt	R	acgtgc	PHO89	-324	-319	tcccACGTGCtgca	4.08
+cacgtgg|ccacgtg	D	cacgtgg	PHO89	-323	-317	gcagCACGTGGgaga	2.43
+cacgtggg|cccacgtg	D	cacgtggg	PHO89	-323	-316	gcagCACGTGGGagac	2.13
+acgtgg|ccacgt	D	acgtgg	PHO89	-322	-317	cagcACGTGGgaga	1.62
+acgtgg|ccacgt	R	acgtgg	PHO89	-464	-459	cacaACGTGGggat	1.62
+cccacg|cgtggg	D	cccacg	PHO89	-465	-460	catcCCCACGttgt	1.27
+cccacg|cgtggg	R	cccacg	PHO89	-321	-316	gtctCCCACGtgct	1.27
+acgtggg|cccacgt	D	acgtggg	PHO89	-322	-316	cagcACGTGGGagac	1.17
+acgtggg|cccacgt	R	acgtggg	PHO89	-465	-459	cacaACGTGGGgatg	1.17
+cacgtg|cacgtg	DR	cacgtg	PHO89	-323	-318	gcagCACGTGggag	0.93
+START_END	DR	-	PHO87	-435	-1	-	0.00
+acgtgc|gcacgt	R	acgtgc	PHO87	-133	-128	tcccACGTGCgaaa	4.08
+cacgtgg|ccacgtg	D	cacgtgg	PHO87	-132	-126	ttcgCACGTGGgaaa	2.43
+cacgtggg|cccacgtg	D	cacgtggg	PHO87	-132	-125	ttcgCACGTGGGaaaa	2.13
+acgtgg|ccacgt	D	acgtgg	PHO87	-131	-126	tcgcACGTGGgaaa	1.62
+cccacg|cgtggg	R	cccacg	PHO87	-130	-125	ttttCCCACGtgcg	1.27
+cgcacg|cgtgcg	D	cgcacg	PHO87	-134	-129	atttCGCACGtggg	1.21
+acgtggg|cccacgt	D	acgtggg	PHO87	-131	-125	tcgcACGTGGGaaaa	1.17
+acgtgcg|cgcacgt	R	acgtgcg	PHO87	-134	-128	tcccACGTGCGaaat	1.09
+cacgtg|cacgtg	DR	cacgtg	PHO87	-132	-127	ttcgCACGTGggaa	0.93
+cgtgcga|tcgcacg	R	cgtgcga	PHO87	-135	-129	cccaCGTGCGAaatc	0.63
+START_END	DR	-	PHO13	-466	-1	-	0.00
+acgtgc|gcacgt	R	acgtgc	PHO13	-222	-217	gaaaACGTGCtgga	4.08
+START_END	DR	-	PHO2	-487	-1	-	0.00
+tgccaa|ttggca	R	tgccaa	PHO2	-214	-209	cttgTGCCAAaaag	0.19
+START_END	DR	-	PHO8	-180	-1	-	0.00
+START_END	DR	-	PHO4	-162	-1	-	0.00
+cgcacg|cgtgcg	D	cgcacg	PHO4	-130	-125	cgctCGCACGgaaa	1.21
+cgtgcga|tcgcacg	R	cgtgcga	PHO4	-131	-125	tttcCGTGCGAgcgg	0.63
+tgccaa|ttggca	R	tgccaa	PHO4	-117	-112	cattTGCCAAatat	0.19
+START_END	DR	-	PHO81	-800	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	PHO81	-343	-338	tggcACGTGCgaat	4.08
+acgtgc|gcacgt	D	acgtgc	PHO81	-7	-2	ataaACGTGCa	4.08
+acgtgc|gcacgt	R	acgtgc	PHO81	-345	-340	tcgcACGTGCcata	4.08
+acgtgg|ccacgt	D	acgtgg	PHO81	-715	-710	cgctACGTGGaatg	1.62
+cgcacg|cgtgcg	R	cgcacg	PHO81	-342	-337	tattCGCACGtgcc	1.21
+acgtgcg|cgcacgt	D	acgtgcg	PHO81	-343	-337	tggcACGTGCGaata	1.09
+cacgtg|cacgtg	DR	cacgtg	PHO81	-344	-339	atggCACGTGcgaa	0.93
+cgtgcga|tcgcacg	D	cgtgcga	PHO81	-342	-336	ggcaCGTGCGAataa	0.63
+tgccaa|ttggca	R	tgccaa	PHO81	-514	-509	cgcgTGCCAAagac	0.19
+START_END	DR	-	PHO12	-599	-1	-	0.00
+acgtgc|gcacgt	R	acgtgc	PHO12	-215	-210	tgtgACGTGCggaa	4.08
+cacgtgg|ccacgtg	D	cacgtgg	PHO12	-283	-277	ttcaCACGTGGgttt	2.43
+cacgtggg|cccacgtg	D	cacgtggg	PHO12	-283	-276	ttcaCACGTGGGttta	2.13
+acgtgg|ccacgt	D	acgtgg	PHO12	-282	-277	tcacACGTGGgttt	1.62
+acgtgg|ccacgt	R	acgtgg	PHO12	-419	-414	gaaaACGTGGtaat	1.62
+cccacg|cgtggg	R	cccacg	PHO12	-503	-498	gacaCCCACGatga	1.27
+cccacg|cgtggg	R	cccacg	PHO12	-281	-276	taaaCCCACGtgtg	1.27
+cgcacg|cgtgcg	D	cgcacg	PHO12	-216	-211	attcCGCACGtcac	1.21
+acgtggg|cccacgt	D	acgtggg	PHO12	-282	-276	tcacACGTGGGttta	1.17
+acgtgcg|cgcacgt	R	acgtgcg	PHO12	-216	-210	tgtgACGTGCGgaat	1.09
+cacgtg|cacgtg	DR	cacgtg	PHO12	-283	-278	ttcaCACGTGggtt	0.93
+tgccaa|ttggca	D	tgccaa	PHO12	-204	-199	acatTGCCAAattg	0.19
+tgccaa|ttggca	D	tgccaa	PHO12	-138	-133	gaatTGCCAAgtaa	0.19
+START_END	DR	-	PHO90	-800	-1	-	0.00
+acgtgc|gcacgt	R	acgtgc	PHO90	-523	-518	ctttACGTGCcaaa	4.08
+tgccaa|ttggca	R	tgccaa	PHO90	-526	-521	tacgTGCCAAaggt	0.19
+START_END	DR	-	PHO86	-232	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	PHO86	-189	-184	ccgcACGTGCtctt	4.08
+acgtgc|gcacgt	R	acgtgc	PHO86	-191	-186	gagcACGTGCgggc	4.08
+cgcacg|cgtgcg	D	cgcacg	PHO86	-192	-187	cgccCGCACGtgct	1.21
+acgtgcg|cgcacgt	R	acgtgcg	PHO86	-192	-186	gagcACGTGCGggcg	1.09
+cacgtg|cacgtg	DR	cacgtg	PHO86	-190	-185	cccgCACGTGctct	0.93
+START_END	DR	-	PHO84	-800	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	PHO84	-559	-554	ctatACGTGCagca	4.08
+acgtgc|gcacgt	D	acgtgc	PHO84	-261	-256	aaaaACGTGCgtat	4.08
+acgtgc|gcacgt	R	acgtgc	PHO84	-588	-583	accaACGTGCgtaa	4.08
+acgtgc|gcacgt	R	acgtgc	PHO84	-415	-410	ccccACGTGCtgga	4.08
+cacgtgg|ccacgtg	D	cacgtgg	PHO84	-436	-430	gttcCACGTGGacgt	2.43
+cacgtgg|ccacgtg	D	cacgtgg	PHO84	-414	-408	ccagCACGTGGggcg	2.43
+cacgtgg|ccacgtg	R	cacgtgg	PHO84	-437	-431	cgtcCACGTGGaact	2.43
+cacgtggg|cccacgtg	D	cacgtggg	PHO84	-414	-407	ccagCACGTGGGgcgg	2.13
+acgtgg|ccacgt	D	acgtgg	PHO84	-435	-430	ttccACGTGGacgt	1.62
+acgtgg|ccacgt	D	acgtgg	PHO84	-413	-408	cagcACGTGGggcg	1.62
+acgtgg|ccacgt	R	acgtgg	PHO84	-437	-432	gtccACGTGGaact	1.62
+cccacg|cgtggg	R	cccacg	PHO84	-412	-407	ccgcCCCACGtgct	1.27
+cgcacg|cgtgcg	D	cgcacg	PHO84	-589	-584	attaCGCACGttgg	1.21
+cgcacg|cgtgcg	R	cgcacg	PHO84	-260	-255	aataCGCACGtttt	1.21
+acgtggg|cccacgt	D	acgtggg	PHO84	-413	-407	cagcACGTGGGgcgg	1.17
+acgtgcg|cgcacgt	D	acgtgcg	PHO84	-261	-255	aaaaACGTGCGtatt	1.09
+acgtgcg|cgcacgt	R	acgtgcg	PHO84	-589	-583	accaACGTGCGtaat	1.09
+cacgtg|cacgtg	DR	cacgtg	PHO84	-436	-431	gttcCACGTGgacg	0.93
+cacgtg|cacgtg	DR	cacgtg	PHO84	-414	-409	ccagCACGTGgggc	0.93
+tgccaa|ttggca	D	tgccaa	PHO84	-617	-612	aacaTGCCAAgaaa	0.19
+tgccaa|ttggca	D	tgccaa	PHO84	-453	-448	ccgaTGCCAAttta	0.19
+tgccaa|ttggca	D	tgccaa	PHO84	-167	-162	gtaaTGCCAActta	0.19
+tgccaa|ttggca	R	tgccaa	PHO84	-203	-198	atgcTGCCAAaaag	0.19
+START_END	DR	-	PHO23	-647	-1	-	0.00
+acgtgc|gcacgt	R	acgtgc	PHO23	-305	-300	ttggACGTGCctca	4.08
+acgtgg|ccacgt	R	acgtgg	PHO23	-28	-23	atgaACGTGGttgc	1.62
+START_END	DR	-	PHO91	-752	-1	-	0.00
+cacgtgg|ccacgtg	R	cacgtgg	PHO91	-202	-196	ccatCACGTGGatcc	2.43
+acgtgg|ccacgt	R	acgtgg	PHO91	-202	-197	catcACGTGGatcc	1.62
+cccacg|cgtggg	R	cccacg	PHO91	-386	-381	tttcCCCACGccgg	1.27
+cacgtg|cacgtg	DR	cacgtg	PHO91	-201	-196	gatcCACGTGatgg	0.93
+START_END	DR	-	PHO80	-800	-1	-	0.00
+acgtgc|gcacgt	D	acgtgc	PHO80	-489	-484	gcgaACGTGCttgt	4.08
+START_END	DR	-	PHO85	-505	-1	-	0.00
+; Host name	rsat-tagc
+; Job started	2021-03-02.214855
+; Job done	2021-03-02.214855
+; Seconds	0.17
+;	user	0.18
+;	system	0
+;	cuser	0
+;	csystem	0

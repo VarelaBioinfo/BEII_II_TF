@@ -1,0 +1,105 @@
+; dna-pattern  -v 1 -pl $RSAT/public_html/tmp/apache/2021/03/02/dna-pattern_2021-03-02.152954_lcCBMF.pat -i $RSAT/public_html/tmp/apache/2021/03/02/random-seq_2021-03-02.151507_2O9zr3.fasta.fasta.fasta -format fasta -return sites -origin -0 -N 4 -return limits -noov -2str -subst 0
+; Citation: van Helden et al. (2000). Yeast 16(2), 177-187.
+; Input file           	$RSAT/public_html/tmp/apache/2021/03/02/random-seq_2021-03-02.151507_2O9zr3.fasta.fasta.fasta
+; Input format         	fasta
+; Pattern file         	$RSAT/public_html/tmp/apache/2021/03/02/dna-pattern_2021-03-02.152954_lcCBMF.pat
+; Search method        	regexp
+; Threshold            	0
+; Allowed substitutions	0
+; Return fields
+;                     	limits
+;                     	sites
+; Patterns
+; 	seq	id	score
+; 	tacgaaa	tacgaaa|tttcgta	1.18
+; 	agcaat	agcaat|attgct	0.82
+; 	tacgaaaa	tacgaaaa|ttttcgta	0.40
+; 	atttttga	atttttga|tcaaaaat	0.30
+; 	gagcaata	gagcaata|tattgctc	0.15
+; 
+; Matching positions
+; PatID	Strand	Pattern	SeqID	Start	End	matching_seq	Score
+START_END	DR	-	rand_1	-800	-1	-	0.00
+agcaat|attgct	D	agcaat	rand_1	-114	-109	gaagAGCAATacgt	0.82
+agcaat|attgct	R	agcaat	rand_1	-558	-553	caaaAGCAATgggg	0.82
+agcaat|attgct	R	agcaat	rand_1	-238	-233	ttcaAGCAATcata	0.82
+gagcaata|tattgctc	D	gagcaata	rand_1	-115	-108	tgaaGAGCAATAcgtc	0.15
+START_END	DR	-	rand_2	-446	-1	-	0.00
+agcaat|attgct	R	agcaat	rand_2	-402	-397	ttttAGCAATtcct	0.82
+atttttga|tcaaaaat	R	atttttga	rand_2	-228	-221	tactATTTTTGAggat	0.30
+START_END	DR	-	rand_3	-800	-1	-	0.00
+agcaat|attgct	D	agcaat	rand_3	-581	-576	gcaaAGCAATgtcc	0.82
+START_END	DR	-	rand_4	-688	-1	-	0.00
+agcaat|attgct	D	agcaat	rand_4	-437	-432	ccacAGCAATcatt	0.82
+agcaat|attgct	R	agcaat	rand_4	-576	-571	aaatAGCAATactt	0.82
+agcaat|attgct	R	agcaat	rand_4	-409	-404	agtaAGCAATggta	0.82
+agcaat|attgct	R	agcaat	rand_4	-240	-235	gaggAGCAATatat	0.82
+agcaat|attgct	R	agcaat	rand_4	-143	-138	attgAGCAATacgt	0.82
+atttttga|tcaaaaat	R	atttttga	rand_4	-533	-526	agccATTTTTGActgt	0.30
+gagcaata|tattgctc	R	gagcaata	rand_4	-241	-234	agagGAGCAATAtatt	0.15
+gagcaata|tattgctc	R	gagcaata	rand_4	-144	-137	aattGAGCAATAcgtt	0.15
+START_END	DR	-	rand_5	-800	-1	-	0.00
+tacgaaa|tttcgta	D	tacgaaa	rand_5	-790	-784	gacaTACGAAAaaaa	1.18
+tacgaaa|tttcgta	R	tacgaaa	rand_5	-558	-552	taatTACGAAAtaca	1.18
+agcaat|attgct	D	agcaat	rand_5	-693	-688	ctggAGCAATtact	0.82
+tacgaaaa|ttttcgta	D	tacgaaaa	rand_5	-790	-783	gacaTACGAAAAaaaa	0.40
+START_END	DR	-	rand_6	-435	-1	-	0.00
+tacgaaa|tttcgta	R	tacgaaa	rand_6	-304	-298	gattTACGAAAagaa	1.18
+agcaat|attgct	D	agcaat	rand_6	-349	-344	gatgAGCAATagtt	0.82
+tacgaaaa|ttttcgta	R	tacgaaaa	rand_6	-305	-298	gattTACGAAAAgaaa	0.40
+atttttga|tcaaaaat	R	atttttga	rand_6	-324	-317	ataaATTTTTGAgtta	0.30
+gagcaata|tattgctc	D	gagcaata	rand_6	-350	-343	agatGAGCAATAgttt	0.15
+START_END	DR	-	rand_7	-466	-1	-	0.00
+atttttga|tcaaaaat	D	atttttga	rand_7	-424	-417	atcaATTTTTGAatag	0.30
+START_END	DR	-	rand_8	-487	-1	-	0.00
+tacgaaa|tttcgta	R	tacgaaa	rand_8	-383	-377	ctaaTACGAAAatac	1.18
+tacgaaa|tttcgta	R	tacgaaa	rand_8	-154	-148	atggTACGAAAacat	1.18
+tacgaaaa|ttttcgta	R	tacgaaaa	rand_8	-384	-377	ctaaTACGAAAAtact	0.40
+tacgaaaa|ttttcgta	R	tacgaaaa	rand_8	-155	-148	atggTACGAAAAcata	0.40
+atttttga|tcaaaaat	D	atttttga	rand_8	-306	-299	taaaATTTTTGAaagg	0.30
+atttttga|tcaaaaat	R	atttttga	rand_8	-450	-443	attgATTTTTGAttat	0.30
+START_END	DR	-	rand_9	-180	-1	-	0.00
+START_END	DR	-	rand_10	-162	-1	-	0.00
+START_END	DR	-	rand_11	-800	-1	-	0.00
+tacgaaa|tttcgta	D	tacgaaa	rand_11	-285	-279	atatTACGAAAataa	1.18
+agcaat|attgct	D	agcaat	rand_11	-113	-108	cattAGCAATaccc	0.82
+agcaat|attgct	R	agcaat	rand_11	-582	-577	agaaAGCAATcgcg	0.82
+tacgaaaa|ttttcgta	D	tacgaaaa	rand_11	-285	-278	atatTACGAAAAtaaa	0.40
+atttttga|tcaaaaat	R	atttttga	rand_11	-460	-453	ccttATTTTTGAacta	0.30
+START_END	DR	-	rand_12	-599	-1	-	0.00
+agcaat|attgct	R	agcaat	rand_12	-22	-17	taatAGCAATagcg	0.82
+START_END	DR	-	rand_13	-800	-1	-	0.00
+agcaat|attgct	R	agcaat	rand_13	-604	-599	aactAGCAATtagc	0.82
+agcaat|attgct	R	agcaat	rand_13	-64	-59	cttgAGCAATatca	0.82
+atttttga|tcaaaaat	D	atttttga	rand_13	-455	-448	tcgaATTTTTGAaaca	0.30
+atttttga|tcaaaaat	R	atttttga	rand_13	-381	-374	ttttATTTTTGAagct	0.30
+gagcaata|tattgctc	R	gagcaata	rand_13	-65	-58	gcttGAGCAATAtcat	0.15
+START_END	DR	-	rand_14	-232	-1	-	0.00
+START_END	DR	-	rand_15	-800	-1	-	0.00
+tacgaaa|tttcgta	D	tacgaaa	rand_15	-264	-258	aattTACGAAAagat	1.18
+tacgaaa|tttcgta	D	tacgaaa	rand_15	-250	-244	taaaTACGAAAgttc	1.18
+tacgaaa|tttcgta	R	tacgaaa	rand_15	-384	-378	cagtTACGAAAacta	1.18
+tacgaaaa|ttttcgta	D	tacgaaaa	rand_15	-264	-257	aattTACGAAAAgata	0.40
+tacgaaaa|ttttcgta	R	tacgaaaa	rand_15	-385	-378	cagtTACGAAAActaa	0.40
+START_END	DR	-	rand_16	-647	-1	-	0.00
+tacgaaa|tttcgta	D	tacgaaa	rand_16	-368	-362	ttacTACGAAAttat	1.18
+tacgaaa|tttcgta	R	tacgaaa	rand_16	-357	-351	tttaTACGAAAataa	1.18
+agcaat|attgct	R	agcaat	rand_16	-588	-583	tttcAGCAATctta	0.82
+agcaat|attgct	R	agcaat	rand_16	-545	-540	taagAGCAATttga	0.82
+tacgaaaa|ttttcgta	R	tacgaaaa	rand_16	-358	-351	tttaTACGAAAAtaat	0.40
+atttttga|tcaaaaat	D	atttttga	rand_16	-157	-150	cggtATTTTTGActca	0.30
+START_END	DR	-	rand_17	-752	-1	-	0.00
+tacgaaa|tttcgta	R	tacgaaa	rand_17	-182	-176	catcTACGAAAccaa	1.18
+START_END	DR	-	rand_18	-800	-1	-	0.00
+agcaat|attgct	D	agcaat	rand_18	-47	-42	gactAGCAATgtgt	0.82
+agcaat|attgct	R	agcaat	rand_18	-157	-152	agggAGCAATattt	0.82
+gagcaata|tattgctc	R	gagcaata	rand_18	-158	-151	aaggGAGCAATAtttt	0.15
+START_END	DR	-	rand_19	-505	-1	-	0.00
+; Host name	sinik
+; Job started	2021-03-02.152954
+; Job done	2021-03-02.152954
+; Seconds	0.24
+;	user	0.24
+;	system	0.01
+;	cuser	0
+;	csystem	0

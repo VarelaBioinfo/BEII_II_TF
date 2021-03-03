@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 Final Words | Bioinformática y estadística II Módulo II</title>
+  <title>Chapter 4 Búsqueda de motivos | Bioinformática y estadística II Módulo II</title>
   <meta name="description" content="Módulo impartido por el profesor Jacques van Helden" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 Final Words | Bioinformática y estadística II Módulo II" />
+  <meta property="og:title" content="Chapter 4 Búsqueda de motivos | Bioinformática y estadística II Módulo II" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 Final Words | Bioinformática y estadística II Módulo II" />
+  <meta name="twitter:title" content="Chapter 4 Búsqueda de motivos | Bioinformática y estadística II Módulo II" />
   
   <meta name="twitter:description" content="Módulo impartido por el profesor Jacques van Helden" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="descubrimiento-de-motivos.html"/>
-<link rel="next" href="references.html"/>
+<link rel="prev" href="práctica-1.html"/>
+<link rel="next" href="descubrimiento-de-motivos.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -129,18 +129,69 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="final-words" class="section level1">
-<h1><span class="header-section-number">Chapter 6</span> Final Words</h1>
-<p>We have finished a nice book.</p>
+<div id="búsqueda-de-motivos" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Búsqueda de motivos</h1>
+<div id="total-number-of-pssm-matches-in-all-randomized-promoters" class="section level2">
+<h2><span class="header-section-number">4.1</span> Total number of PSSM matches in all randomized promoters</h2>
+</div>
+<div id="generar-secuencias-aleatorias-para-verificar-la-tasa-de-falsos-positivos" class="section level2">
+<h2><span class="header-section-number">4.2</span> Generar secuencias aleatorias para verificar la tasa de falsos positivos</h2>
+<p>Generamos secuencias aleatorias (hipótesis nula)</p>
+<p><a href="http://embnet.ccg.unam.mx/rsat/random-seq.cgi">Bernoulli</a>
+<a href="http://embnet.ccg.unam.mx/rsat/random-seq.cgi">Markov 1</a>
+<a href="http://embnet.ccg.unam.mx/rsat/random-seq.cgi">Markov 2</a></p>
+<p>## Matrix scan-result</p>
+<p><a href="http://embnet.ccg.unam.mx/rsat/matrix-scan.cgi">Matrix scan Markov 1</a>
+<a href="">Matrix scan Markov 2</a></p>
+<p>Sacando todas las secuecnias rio arriba de e.coli no overlapping</p>
+<p><a href="http://embnet.ccg.unam.mx/rsat/retrieve-seq.cgi">E.coli nooverlaping noorf</a></p>
+<p><a href="http://embnet.ccg.unam.mx/rsat/random-seq.cgi">Random sequences from e.coli nooverlapping noorf</a></p>
+</div>
+<div id="bernoulli" class="section level2">
+<h2><span class="header-section-number">4.3</span> Bernoulli</h2>
+<p>La probabilidad de una secuecnia es el producto de la probabilidad de los residuos de la secuencia</p>
+<ul>
+<li>Asume que cada residuo tiene una probabilidad específica previa</li>
+<li>Son independientes</li>
+</ul>
+<p><span class="math inline">\(P(CATG)=P(C)*P(A)*P(T)*P(G)\)</span></p>
+</div>
+<div id="dependencia-markov-2" class="section level2">
+<h2><span class="header-section-number">4.4</span> Dependencia Markov 2</h2>
+<p><span class="math inline">\(P(A|AG)\)</span></p>
+<ul>
+<li>Se genera una matriz de transición</li>
+<li>cómo se estima una matriz</li>
+</ul>
+</div>
+<div id="grados-de-libertad" class="section level2">
+<h2><span class="header-section-number">4.5</span> 3 Grados de libertad</h2>
+<p>si yo ya conozco la probabilidad de A, C y G entonces la de T es uno menos la de las otras 3 entonces ya no es libre</p>
+</div>
+<div id="dependencia-markov-1" class="section level2">
+<h2><span class="header-section-number">4.6</span> Dependencia Markov 1</h2>
+<p><span class="math inline">\(P(A|G)\)</span></p>
+<p>La probabilidad de un nucleotido dado un prefijo</p>
+<p><span class="math inline">\(P(G|T)\)</span></p>
+<p>Es la proporción de los G
+Numero de Tg/la suma de TA, TC, TG, TT (puedo hacerlo en frecuencias)</p>
+<p><span class="math inline">\(\frac{TG}{Frecuencia(TA+ TC+TG+TT)}\)</span></p>
+<p>Calculo la probabilidad del producto de la probabilidad de cada nucleótido según el nucleótido posterior</p>
+<p>Ejercicio
+<a href="http://embnet.ccg.unam.mx/rsat//tmp/apache/2021/03/02/matrix-scan_2021-03-02.101640_s4aDVc.ft">Total number of PSSM matches in all randomized promoters</a></p>
+<p>Randomized promoters with at least one PSSM match</p>
+<p><code>grep 'site\s' file.ft | cut -f1 | uniq | grep -c 'rand'</code></p>
+<p>secuencias verdaderas pero con una matriz aleatoria</p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="descubrimiento-de-motivos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="práctica-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="descubrimiento-de-motivos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

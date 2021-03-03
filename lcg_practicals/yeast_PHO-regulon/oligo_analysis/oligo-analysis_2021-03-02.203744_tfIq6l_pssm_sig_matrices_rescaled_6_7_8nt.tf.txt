@@ -1,0 +1,104 @@
+AC  assembly_1
+XX
+ID  tcgcacgtgcga
+XX
+DE  nntcGCACGTGCgann
+P0           a         c         g         t
+1        0.000     0.000     0.000     0.000
+2        0.000     0.000     0.000     0.000
+3        0.000     0.000     0.000    15.441
+4        0.000    29.657     0.000     0.000
+5        0.000     0.000   100.000     0.000
+6        0.000   100.000     0.000     0.000
+7      100.000     0.000     0.000     0.000
+8        0.000   100.000     0.000     0.000
+9        0.000     0.000   100.000     0.000
+10       0.000     0.000     0.000   100.000
+11       0.000     0.000   100.000     0.000
+12       0.000   100.000     0.000     0.000
+13       0.000     0.000    29.657     0.000
+14      15.441     0.000     0.000     0.000
+15       0.000     0.000     0.000     0.000
+16       0.000     0.000     0.000     0.000
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1
+CC  accession: assembly_1
+CC  AC: assembly_1
+CC  id: assembly_1
+CC  name: tcgcacgtgcga
+CC  version: 
+CC  name: tcgcacgtgcga
+CC  description: nntcGCACGTGCgann
+CC  transfac_consensus: 
+CC  matrix.nb: 1
+XX
+//
+AC  assembly_2
+XX
+ID  tcgcacgtggg
+XX
+DE  nntcGCACGTGGGnn
+P0           a         c         g         t
+1        0.000     0.000     0.000     0.000
+2        0.000     0.000     0.000     0.000
+3        0.000     0.000     0.000    15.441
+4        0.000    29.657     0.000     0.000
+5        0.000     0.000   100.000     0.000
+6        0.000   100.000     0.000     0.000
+7      100.000     0.000     0.000     0.000
+8        0.000   100.000     0.000     0.000
+9        0.000     0.000   100.000     0.000
+10       0.000     0.000     0.000   100.000
+11       0.000     0.000    59.559     0.000
+12       0.000     0.000    59.559     0.000
+13       0.000     0.000    52.206     0.000
+14       0.000     0.000     0.000     0.000
+15       0.000     0.000     0.000     0.000
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 2
+CC  accession: assembly_2
+CC  AC: assembly_2
+CC  id: assembly_2
+CC  name: tcgcacgtggg
+CC  version: 
+CC  name: tcgcacgtggg
+CC  description: nntcGCACGTGGGnn
+CC  transfac_consensus: 
+CC  matrix.nb: 2
+XX
+//
+AC  assembly_3
+XX
+ID  tgccaa
+XX
+DE  nntgccaann
+P0           a         c         g         t
+1        0.000     0.000     0.000     0.000
+2        0.000     0.000     0.000     0.000
+3        0.000     0.000     0.000   100.000
+4        0.000     0.000   100.000     0.000
+5        0.000   100.000     0.000     0.000
+6        0.000   100.000     0.000     0.000
+7      100.000     0.000     0.000     0.000
+8      100.000     0.000     0.000     0.000
+9        0.000     0.000     0.000     0.000
+10       0.000     0.000     0.000     0.000
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 3
+CC  accession: assembly_3
+CC  AC: assembly_3
+CC  id: assembly_3
+CC  name: tgccaa
+CC  version: 
+CC  name: tgccaa
+CC  description: nntgccaann
+CC  transfac_consensus: 
+CC  matrix.nb: 3
+XX
+//

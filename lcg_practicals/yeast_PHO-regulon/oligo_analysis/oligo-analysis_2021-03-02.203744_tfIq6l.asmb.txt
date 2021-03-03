@@ -1,0 +1,55 @@
+; pattern-assembly  -v 1 -subst 1 -toppat 50 -2str -max_asmb_nb 20 -i $RSAT/public_html/tmp/www-data/2021/03/02/oligo-analysis_2021-03-02.203744_tfIq6l.tab -o $RSAT/public_html/tmp/www-data/2021/03/02/oligo-analysis_2021-03-02.203744_tfIq6l.asmb
+; Input file	/workspace/rsat/public_html/tmp/www-data/2021/03/02/oligo-analysis_2021-03-02.203744_tfIq6l.tab
+; Output file	/workspace/rsat/public_html/tmp/www-data/2021/03/02/oligo-analysis_2021-03-02.203744_tfIq6l.asmb
+; Input score column           	8
+; Output score column          	0
+; Strand-insensitive assembly
+; Max flanking bases           	1
+; Max substitutions            	1
+; Min matches                  	0
+; Min weight                   	0
+; Max assembly size            	50
+; Max assembly width           	0
+; Top number of patterns       	50
+; Number of input patterns     	11
+;
+
+; assembly # 1	seed: acgtgc	9 assembled patterns	length 12
+;     alignt	     rev_cpl	score
+tcgcacg.....	.....cgtgcga	0.63
+.cgcacg.....	.....cgtgcg.	1.21
+.cgcacgt....	....acgtgcg.	1.09
+..gcacgt....	....acgtgc..	4.08
+...cacgtg...	...cacgtg...	0.93
+....acgtgc..	..gcacgt....	4.08
+....acgtgcg.	.cgcacgt....	1.09
+.....cgtgcg.	.cgcacg.....	1.21
+.....cgtgcga	tcgcacg.....	0.63
+tcgcacgtgcga	tcgcacgtgcga	4.08	best consensus
+
+; assembly # 2	seed: cacgtgg	10 assembled patterns	length 11
+;    alignt	    rev_cpl	score
+tcgcacg....	....cgtgcga	0.63
+.cgcacg....	....cgtgcg.	1.21
+.cgcacgt...	...acgtgcg.	1.09
+..gcacgt...	...acgtgc..	4.08
+...cacgtgg.	.ccacgtg...	2.43
+...cacgtggg	cccacgtg...	2.13
+...cacgtg..	..cacgtg...	0.93
+....acgtgg.	.ccacgt....	1.62
+....acgtggg	cccacgt....	1.17
+.....cgtggg	cccacg.....	1.27
+tcgcacgtggg	cccacgtgcga	4.08	best consensus
+
+; assembly # 3	seed: tgccaa	1 assembled patterns	length 6
+;alignt	rev_cpl	score
+tgccaa	ttggca	0.19
+tgccaa	ttggca	0.19	best consensus
+; Host name	rsat-tagc
+; Job started	2021-03-02.203756
+; Job done	2021-03-02.203757
+; Seconds	0.78
+;	user	0.78
+;	system	0.01
+;	cuser	0
+;	csystem	0

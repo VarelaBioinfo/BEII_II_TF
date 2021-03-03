@@ -1,0 +1,64 @@
+AC  cluster_2
+XX
+ID  cluster_2
+XX
+DE  mwTGCCAArt
+P0           a         c         g         t
+1            8         5         2         2
+2            6         1         4         6
+3            0         0         0        17
+4            0         0        17         0
+5            0        17         0         0
+6            0        17         0         0
+7           17         0         0         0
+8           17         0         0         0
+9            9         1         5         2
+10           4         0         4         9
+XX
+CC  program: feature
+CC  matrix.nb: 1
+CC  matrix.nb: 1
+CC  sites: 17
+CC  consensus.strict: aaTGCCAAat
+CC  consensus.strict.rc: ATTTGGCATT
+CC  consensus.IUPAC: mwTGCCAArt
+CC  consensus.IUPAC.rc: AYTTGGCAWK
+CC  consensus.regexp: [ac][at]TGCCAA[ag]t
+CC  consensus.regexp.rc: A[CT]TTGGCA[AT][GT]
+XX
+//
+AC  cluster_1
+XX
+ID  cluster_1
+XX
+DE  wtTcgCACGTGsGAaw
+P0           a         c         g         t
+1            2         0         0         4
+2            1         1         1         3
+3            0         1         0         5
+4            1         4         1         0
+5            1         1         4         0
+6            0         6         0         0
+7            6         0         0         0
+8            0         6         0         0
+9            0         0         6         0
+10           0         0         0         6
+11           0         0         6         0
+12           0         3         3         0
+13           0         1         5         0
+14           6         0         0         0
+15           3         1         1         1
+16           4         0         0         2
+XX
+CC  program: feature
+CC  matrix.nb: 2
+CC  matrix.nb: 2
+CC  sites: 6
+CC  consensus.strict: ttTcgCACGTGcGAaa
+CC  consensus.strict.rc: TTTCGCACGTGCGAAA
+CC  consensus.IUPAC: wtTcgCACGTGsGAaw
+CC  consensus.IUPAC.rc: WTTCSCACGTGCGAAW
+CC  consensus.regexp: [at]tTcgCACGTG[cg]GAa[at]
+CC  consensus.regexp.rc: [AT]TTC[CG]CACGTGCGAA[AT]
+XX
+//

@@ -1,0 +1,26 @@
+; convert-matrix  -v 1 -i $RSAT/public_html/tmp/www-data/2021/03/02/oligo-analysis_2021-03-02.203744_tfIq6l_pssm_count_matrices.tf -from transfac -to tab -return counts -o $RSAT/public_html/tmp/www-data/2021/03/02/oligo-analysis_2021-03-02.203744_tfIq6l_pssm_count_matrices.txt
+; Input files
+;	input	/workspace/rsat/public_html/tmp/www-data/2021/03/02/oligo-analysis_2021-03-02.203744_tfIq6l_pssm_count_matrices.tf
+; Input format        	transfac
+; Output files
+;	output	/workspace/rsat/public_html/tmp/www-data/2021/03/02/oligo-analysis_2021-03-02.203744_tfIq6l_pssm_count_matrices.txt
+; Output format       	tab
+; pseudo-weight       	1
+a	8	6	0	0	0	0	17	17	9	4
+c	5	1	0	0	17	17	0	0	1	0
+g	2	4	0	17	0	0	0	0	5	4
+t	2	6	17	0	0	0	0	0	2	9
+//
+a	2	1	0	1	1	0	6	0	0	0	0	0	0	6	3	4
+c	0	1	1	4	1	6	0	6	0	0	0	3	1	0	1	0
+g	0	1	0	1	4	0	0	0	6	0	6	3	5	0	1	0
+t	4	3	5	0	0	0	0	0	0	6	0	0	0	0	1	2
+//
+; Host name	rsat-tagc
+; Job started	2021-03-02.203810
+; Job done	2021-03-02.203810
+; Seconds	0.15
+;	user	0.15
+;	system	0.01
+;	cuser	0
+;	csystem	0

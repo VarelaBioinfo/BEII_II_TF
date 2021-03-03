@@ -1,0 +1,141 @@
+; matrix-scan  -v 1 -matrix_format transfac -m $RSAT/public_html/tmp/apache/2021/03/02/matrix-scan_2021-03-02.101640_s4aDVc.matrix -pseudo 1 -decimals 1 -2str -origin end -bgfile $RSAT/public_html/data/genomes/Escherichia_coli_GCF_000005845.2_ASM584v2/oligo-frequencies/2nt_upstream-noorf_Escherichia_coli_GCF_000005845.2_ASM584v2-ovlp-1str.freq -bg_pseudo 0.01 -return sites -return pval -return rank -lth score 1 -uth pval 1e-4 -i $RSAT/public_html/tmp/apache/2021/03/02/random-seq_2021-03-02.095354_uJGj1Z.fasta.fasta -seq_format fasta -n score
+; Slow counting mode            
+; Input files
+;	input	$RSAT/public_html/tmp/apache/2021/03/02/random-seq_2021-03-02.095354_uJGj1Z.fasta.fasta
+;	bg	$RSAT/public_html/data/genomes/Escherichia_coli_GCF_000005845.2_ASM584v2/oligo-frequencies/2nt_upstream-noorf_Escherichia_coli_GCF_000005845.2_ASM584v2-ovlp-1str.freq
+; Matrix files
+;	matrix 1	$RSAT/public_html/tmp/apache/2021/03/02/matrix-scan_2021-03-02.101640_s4aDVc.matrix
+; Sequence format      	fasta
+; Pseudo counts        	1
+; Background model
+;	Method        	file
+;	Markov order  	1
+;	Strand        	sensitive
+;	Background pseudo-frequency	0.01
+;	Residue probabilities
+;		a	0.29156
+;		c	0.20734
+;		g	0.20354
+;		t	0.29756
+; Thresholds	lower	upper
+;	pval  	NA	0.0001
+;	score 	1    	NA
+; Output columns
+;	1	seq_id
+;	2	ft_type
+;	3	ft_name
+;	4	strand
+;	5	start
+;	6	end
+;	7	sequence
+;	8	weight
+#seq_id	ft_type	ft_name	strand	start	end	sequence	weight	Pval	ln_Pval	sig	rank	rank_pm
+rand_110	site	Nac	D	-164	-148	GCCCCTTAAAAGAATCC	7.5	5.4e-05	-9.834	4.271	1	1
+rand_138	site	Nac	R	-42	-26	TCATCATCAGAAAATCA	7.1	9.2e-05	-9.295	4.037	1	1
+rand_277	site	Nac	D	-18	-2	TCCCCACAAAAAAATTC	8.9	5.4e-06	-12.122	5.265	1	1
+rand_288	site	Nac	D	-76	-60	ATCACATGAGAAATAAC	7.2	8.1e-05	-9.416	4.089	1	1
+rand_319	site	Nac	D	-219	-203	AACACATAAAATAATTT	8.1	2.2e-05	-10.738	4.664	1	1
+rand_432	site	Nac	D	-78	-62	TCCATATAAGATACTTA	7.7	4.0e-05	-10.126	4.398	1	1
+rand_621	site	Nac	D	-70	-54	TGCGCATGAGAGTATGA	7.3	7.0e-05	-9.568	4.155	1	1
+rand_671	site	Nac	D	-192	-176	AACACATCAGAATATCA	8.4	1.3e-05	-11.244	4.883	1	1
+rand_719	site	Nac	D	-53	-37	ACCACATGAACGAATAT	7.6	4.6e-05	-9.994	4.340	1	1
+rand_733	site	Nac	D	-381	-365	GTGCCATAAGATTATCT	8.6	9.5e-06	-11.569	5.024	1	1
+rand_757	site	Nac	D	-125	-109	ATCACATGAGAGTACTA	7.7	4.0e-05	-10.126	4.398	1	1
+rand_773	site	Nac	D	-148	-132	TCCCCATGAGAAAGCCC	7.5	5.4e-05	-9.834	4.271	1	1
+rand_793	site	Nac	D	-240	-224	TTCACATATGAGAACTC	7.5	5.4e-05	-9.834	4.271	1	1
+rand_819	site	Nac	R	-239	-223	GAGATATGAGATAATCA	8.9	5.4e-06	-12.122	5.265	1	1
+rand_833	site	Nac	D	-147	-131	GACCCATGAGAACATTC	8.3	1.5e-05	-11.078	4.811	1	1
+rand_839	site	Nac	R	-126	-110	TTGATCTAAGAATATTC	7.7	4.0e-05	-10.126	4.398	1	1
+rand_917	site	Nac	R	-189	-173	GTGCTATAAACTAATCT	8.1	2.2e-05	-10.738	4.664	1	1
+rand_1055	site	Nac	D	-181	-165	ATCTCATAAGAACATGT	7.5	5.4e-05	-9.834	4.271	1	1
+rand_1129	site	Nac	D	-111	-95	CGCACATCAGCTTATTC	7.3	7.0e-05	-9.568	4.155	1	1
+rand_1195	site	Nac	R	-210	-194	TACACATGATATAGTTA	7.4	6.1e-05	-9.707	4.216	1	1
+rand_1212	site	Nac	D	-60	-44	GACTAATAAGATTATAC	7.3	7.0e-05	-9.568	4.155	1	1
+rand_1241	site	Nac	R	-138	-122	ATCACATACAAATATTC	7.1	9.2e-05	-9.295	4.037	1	1
+rand_1262	site	Nac	R	-181	-165	CCCACATAAAATATAAC	7.2	8.1e-05	-9.416	4.089	1	1
+rand_1360	site	Nac	D	-60	-44	ATCACACAAGAGTATAC	8.5	1.1e-05	-11.410	4.955	1	1
+rand_1401	site	Nac	R	-297	-281	TCGCCCTAAGAGATTGC	7.4	6.1e-05	-9.707	4.216	1	1
+rand_1440	site	Nac	R	-88	-72	GTCGCATAATAGAATCA	7.5	5.4e-05	-9.834	4.271	1	1
+rand_1486	site	Nac	D	-177	-161	TGCATATAAGAATGTAC	8.0	2.5e-05	-10.583	4.596	1	1
+rand_1494	site	Nac	D	-108	-92	CTGCTCTAAGAATATCC	8.0	2.5e-05	-10.583	4.596	1	1
+rand_1636	site	Nac	D	-374	-358	GTGCAATAAGATAGTCC	7.8	3.5e-05	-10.274	4.462	1	1
+rand_1652	site	Nac	R	-138	-122	TTGACATAAATAAATCT	7.7	4.0e-05	-10.126	4.398	1	1
+rand_1681	site	Nac	R	-197	-181	CCCAAATGAGAGATTGA	7.2	8.1e-05	-9.416	4.089	1	1
+rand_1698	site	Nac	R	-130	-114	TGCACATAATATATTAT	7.5	5.4e-05	-9.834	4.271	1	1
+rand_1808	site	Nac	R	-55	-39	CGGACATAAGAAATGTC	8.0	2.5e-05	-10.583	4.596	1	1
+rand_1950	site	Nac	D	-355	-339	CGGAAATGAGAGAATTT	7.6	4.6e-05	-9.994	4.340	1	1
+rand_2020	site	Nac	R	-81	-65	TGGACGTAAGATTATAT	7.1	9.2e-05	-9.295	4.037	1	1
+rand_2060	site	Nac	D	-94	-78	TACATATAAGAGCATAA	8.2	1.8e-05	-10.898	4.733	1	1
+rand_2081	site	Nac	D	-230	-214	ATGAAACAAGATAATCA	7.3	7.0e-05	-9.568	4.155	1	1
+rand_2138	site	Nac	D	-38	-22	TACGAATAAAATAATAC	7.4	6.1e-05	-9.707	4.216	1	1
+rand_2219	site	Nac	R	-123	-107	TAGCTATAAGCAAATTT	8.7	7.9e-06	-11.745	5.101	1	1
+rand_2240	site	Nac	D	-106	-90	TCCCCATAAGCATGTCT	7.9	2.9e-05	-10.442	4.535	1	1
+rand_2300	site	Nac	D	-108	-92	TAGTCATAAGAAAAGTT	7.8	3.5e-05	-10.274	4.462	1	1
+rand_2330	site	Nac	D	-73	-57	CTCACACAAGAGATTCC	8.8	6.6e-06	-11.924	5.179	1	1
+rand_2402	site	Nac	R	-315	-299	ATACTATAAGATAATCT	8.5	1.1e-05	-11.410	4.955	1	1
+rand_2461	site	Nac	R	-213	-197	GTGACATGAAATAATTA	8.1	2.2e-05	-10.738	4.664	1	1
+rand_2583	site	Nac	D	-61	-45	GCGACATAAGAAATTTA	8.8	6.6e-06	-11.924	5.179	1	1
+rand_2641	site	Nac	D	-184	-168	GCGACATAAAATATTGA	7.1	9.2e-05	-9.295	4.037	1	1
+rand_2716	site	Nac	R	-112	-96	ACCAAATAAGAGTAACA	7.2	8.1e-05	-9.416	4.089	1	1
+rand_2726	site	Nac	D	-32	-16	CTGATATAAACAAGTAC	7.2	8.1e-05	-9.416	4.089	1	1
+rand_2751	site	Nac	R	-25	-9	TAGAAATGAACAAATTC	7.2	8.1e-05	-9.416	4.089	1	1
+rand_2762	site	Nac	R	-143	-127	GACACATACGAAAATAC	8.5	1.1e-05	-11.410	4.955	1	1
+rand_2842	site	Nac	D	-212	-196	TCCCTAAGAGAACATCA	7.1	9.2e-05	-9.295	4.037	1	1
+rand_2906	site	Nac	D	-52	-36	ACCCTATAAACATATGT	7.7	4.0e-05	-10.126	4.398	1	1
+rand_2910	site	Nac	D	-125	-109	TACATATGAGAGATTGT	8.2	1.8e-05	-10.898	4.733	1	1
+rand_2913	site	Nac	D	-187	-171	ATCCTATATGAGAATGA	7.6	4.6e-05	-9.994	4.340	1	1
+rand_2913	site	Nac	D	-234	-218	ACCACATAAGATTAATT	7.4	6.1e-05	-9.707	4.216	2	2
+rand_2961	site	Nac	D	-56	-40	ATGACATCAGATAATTA	8.8	6.6e-06	-11.924	5.179	1	1
+rand_2977	site	Nac	R	-47	-31	TGCTCATGATATAATAT	7.1	9.2e-05	-9.295	4.037	1	1
+rand_3079	site	Nac	R	-71	-55	GTCATATAAGAGAAGGA	8.0	2.5e-05	-10.583	4.596	1	1
+rand_3102	site	Nac	D	-139	-123	TAGTCATGAGAAATTAA	7.4	6.1e-05	-9.707	4.216	1	1
+rand_3138	site	Nac	R	-140	-124	TTGACATAAAATATTCC	8.4	1.3e-05	-11.244	4.883	1	1
+rand_3296	site	Nac	R	-19	-3	TTGACACAAGCAAATCC	8.5	1.1e-05	-11.410	4.955	1	1
+rand_3328	site	Nac	D	-97	-81	GGGATATAAGAAAAGTA	8.2	1.8e-05	-10.898	4.733	1	1
+rand_3341	site	Nac	D	-351	-335	TCCATATAAGTAAACTA	7.9	2.9e-05	-10.442	4.535	1	1
+rand_3348	site	Nac	R	-79	-63	GACATATAAGAAATTTA	8.6	9.5e-06	-11.569	5.024	1	1
+rand_3386	site	Nac	R	-69	-53	TCAATATGAGATAATAC	8.0	2.5e-05	-10.583	4.596	1	1
+rand_3532	site	Nac	D	-155	-139	TGCTCACGAGAGAATGT	7.4	6.1e-05	-9.707	4.216	1	1
+rand_3603	site	Nac	R	-38	-22	CGCATACAAAAGAATCT	7.6	4.6e-05	-9.994	4.340	1	1
+rand_3624	site	Nac	D	-187	-171	TACACATAATCTAGTTC	7.5	5.4e-05	-9.834	4.271	1	1
+rand_3693	site	Nac	R	-31	-15	TAGATATAATAAAATAA	8.3	1.5e-05	-11.078	4.811	1	1
+rand_3713	site	Nac	R	-158	-142	CGCATATGATATAATAC	7.9	2.9e-05	-10.442	4.535	1	1
+rand_3726	site	Nac	R	-37	-21	AGCCAACAAGAAAATAT	7.3	7.0e-05	-9.568	4.155	1	1
+rand_3739	site	Nac	R	-34	-18	GTCACGTAAGAGTATAA	7.6	4.6e-05	-9.994	4.340	1	1
+rand_3771	site	Nac	R	-178	-162	TCCATATGAGATTTTCA	7.4	6.1e-05	-9.707	4.216	1	1
+rand_3812	site	Nac	R	-305	-289	TCGGCATAAAAGAATAT	7.5	5.4e-05	-9.834	4.271	1	1
+rand_3972	site	Nac	R	-134	-118	ATCATATCAGCAAATAT	7.3	7.0e-05	-9.568	4.155	1	1
+rand_3973	site	Nac	R	-95	-79	CCCATCTAAGATAAACT	7.1	9.2e-05	-9.295	4.037	1	1
+rand_3988	site	Nac	D	-228	-212	TCCCCATGAGCGTAGAC	7.1	9.2e-05	-9.295	4.037	1	1
+rand_4017	site	Nac	R	-118	-102	TACACACGAGAGAAGTT	7.3	7.0e-05	-9.568	4.155	1	1
+rand_4024	site	Nac	D	-291	-275	GTCCCATGAGTGAATCC	8.2	1.8e-05	-10.898	4.733	1	1
+rand_4138	site	Nac	D	-118	-102	AGCTCATAAAAAAATGA	7.7	4.0e-05	-10.126	4.398	1	1
+rand_4146	site	Nac	D	-191	-175	CGCCCCTAAGAATATTA	8.0	2.5e-05	-10.583	4.596	1	1
+rand_4152	site	Nac	D	-150	-134	CCGATATAAAAATATCC	8.7	7.9e-06	-11.745	5.101	1	1
+rand_4163	site	Nac	R	-186	-170	TCGACATAAGAGTTGTA	7.3	7.0e-05	-9.568	4.155	1	1
+rand_4254	site	Nac	R	-162	-146	CACATCTGAGATAATTC	7.7	4.0e-05	-10.126	4.398	1	1
+rand_4270	site	Nac	D	-110	-94	TACACACAATAATATAC	7.6	4.6e-05	-9.994	4.340	1	1
+rand_4270	site	Nac	R	-38	-22	CCCAAATAAAAATATGA	7.1	9.2e-05	-9.295	4.037	2	2
+rand_4296	site	Nac	D	-38	-22	TCGATATAAGTACATCA	7.6	4.6e-05	-9.994	4.340	1	1
+rand_4328	site	Nac	R	-318	-302	TACCCATATGAAAGTCT	7.5	5.4e-05	-9.834	4.271	1	1
+rand_4348	site	Nac	R	-91	-75	ATCCCATACGATAAATC	7.2	8.1e-05	-9.416	4.089	1	1
+rand_4442	site	Nac	D	-132	-116	GAGCCATAAAATTATTC	7.4	6.1e-05	-9.707	4.216	1	1
+;
+; Matrices
+;	matrix	name	ncol	nrow	pseudo	Wmin	Wmax	Wrange
+;	1	Nac	17	4	1	-33.900	12.100	46.000	a:0.292 c:0.207 g:0.204 t:0.298 
+; Number of sequences scanned	4498
+; Sum of sequence lengths	580928
+; N residues           	0
+; Matches per matrix
+;	matrix	name	matches	scored
+;	1	Nac            	90	1047510
+;		TOTAL          	90	1047510
+; Host name	sinik
+; Job started	2021-03-02.101641
+; Job done	2021-03-02.101904
+; Seconds	143.55
+;	user	143.55
+;	system	0.11
+;	cuser	0
+;	csystem	0

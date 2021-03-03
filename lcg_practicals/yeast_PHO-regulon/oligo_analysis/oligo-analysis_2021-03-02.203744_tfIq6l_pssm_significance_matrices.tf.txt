@@ -1,0 +1,107 @@
+AC  assembly_1
+XX
+ID  tcgcacgtgcga
+XX
+DE  nntcGCACGTGCgann
+P0           a         c         g         t
+1         0.00      0.00      0.00      0.00
+2         0.00      0.00      0.00      0.00
+3         0.00      0.00      0.00      0.63
+4         0.00      1.21      0.00      0.00
+5         0.00      0.00      4.08      0.00
+6         0.00      4.08      0.00      0.00
+7         4.08      0.00      0.00      0.00
+8         0.00      4.08      0.00      0.00
+9         0.00      0.00      4.08      0.00
+10        0.00      0.00      0.00      4.08
+11        0.00      0.00      4.08      0.00
+12        0.00      4.08      0.00      0.00
+13        0.00      0.00      1.21      0.00
+14        0.63      0.00      0.00      0.00
+15        0.00      0.00      0.00      0.00
+16        0.00      0.00      0.00      0.00
+XX
+CC  program: pattern-assembly
+CC  matrix.nb: 1
+CC  id: assembly_1
+CC  name: tcgcacgtgcga
+CC  asmb.seed: acgtgc
+CC  matrix.nb: 1
+CC  sites: 9
+CC  consensus.strict: --tcGCACGTGCga--
+CC  consensus.strict.rc: --TCGCACGTGCGA--
+CC  consensus.IUPAC: nntcGCACGTGCgann
+CC  consensus.IUPAC.rc: NNTCGCACGTGCGANN
+CC  consensus.regexp: [acgt][acgt]tcGCACGTGCga[acgt][acgt]
+CC  consensus.regexp.rc: [ACGT][ACGT]TCGCACGTGCGA[ACGT][ACGT]
+XX
+//
+AC  assembly_2
+XX
+ID  tcgcacgtggg
+XX
+DE  nntcGCACGTGGGnn
+P0           a         c         g         t
+1         0.00      0.00      0.00      0.00
+2         0.00      0.00      0.00      0.00
+3         0.00      0.00      0.00      0.63
+4         0.00      1.21      0.00      0.00
+5         0.00      0.00      4.08      0.00
+6         0.00      4.08      0.00      0.00
+7         4.08      0.00      0.00      0.00
+8         0.00      4.08      0.00      0.00
+9         0.00      0.00      4.08      0.00
+10        0.00      0.00      0.00      4.08
+11        0.00      0.00      2.43      0.00
+12        0.00      0.00      2.43      0.00
+13        0.00      0.00      2.13      0.00
+14        0.00      0.00      0.00      0.00
+15        0.00      0.00      0.00      0.00
+XX
+CC  program: pattern-assembly
+CC  matrix.nb: 2
+CC  id: assembly_2
+CC  name: tcgcacgtggg
+CC  asmb.seed: cacgtgg
+CC  matrix.nb: 2
+CC  sites: 10
+CC  consensus.strict: --tcGCACGTGGG--
+CC  consensus.strict.rc: --CCCACGTGCGA--
+CC  consensus.IUPAC: nntcGCACGTGGGnn
+CC  consensus.IUPAC.rc: NNCCCACGTGCGANN
+CC  consensus.regexp: [acgt][acgt]tcGCACGTGGG[acgt][acgt]
+CC  consensus.regexp.rc: [ACGT][ACGT]CCCACGTGCGA[ACGT][ACGT]
+XX
+//
+AC  assembly_3
+XX
+ID  tgccaa
+XX
+DE  nntgccaann
+P0           a         c         g         t
+1         0.00      0.00      0.00      0.00
+2         0.00      0.00      0.00      0.00
+3         0.00      0.00      0.00      0.19
+4         0.00      0.00      0.19      0.00
+5         0.00      0.19      0.00      0.00
+6         0.00      0.19      0.00      0.00
+7         0.19      0.00      0.00      0.00
+8         0.19      0.00      0.00      0.00
+9         0.00      0.00      0.00      0.00
+10        0.00      0.00      0.00      0.00
+XX
+CC  program: pattern-assembly
+CC  matrix.nb: 3
+CC  id: assembly_3
+CC  name: tgccaa
+CC  asmb.seed: tgccaa
+CC  matrix.nb: 3
+CC  sites: 1
+CC  consensus.strict: --tgccaa--
+CC  consensus.strict.rc: --TTGGCA--
+CC  consensus.IUPAC: nntgccaann
+CC  consensus.IUPAC.rc: NNTTGGCANN
+CC  consensus.regexp: [acgt][acgt]tgccaa[acgt][acgt]
+CC  consensus.regexp.rc: [ACGT][ACGT]TTGGCA[ACGT][ACGT]
+XX
+//

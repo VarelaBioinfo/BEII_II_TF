@@ -1,0 +1,62 @@
+AC  cluster_2
+XX
+ID  cluster_2
+XX
+DE  awTACGAAAAwa
+P0           a         c         g         t
+1           13         6         5         6
+2           14         5         3         8
+3            2         1         1        26
+4           28         1         0         1
+5            2        26         1         1
+6            1         2        25         2
+7           28         1         0         1
+8           29         0         0         1
+9           30         0         0         0
+10          26         1         1         2
+11          11         3         7         9
+12          18         4         4         4
+XX
+CC  program: feature
+CC  matrix.nb: 1
+CC  matrix.nb: 1
+CC  sites: 30
+CC  consensus.strict: aaTACGAAAAaa
+CC  consensus.strict.rc: TTTTTTCGTATT
+CC  consensus.IUPAC: awTACGAAAAwa
+CC  consensus.IUPAC.rc: TWTTTTCGTAWT
+CC  consensus.regexp: a[at]TACGAAAA[at]a
+CC  consensus.regexp.rc: T[AT]TTTTCGTA[AT]T
+XX
+//
+AC  cluster_3
+XX
+ID  cluster_3
+XX
+DE  ywATTTTTGAwt
+P0           a         c         g         t
+1            7        10         6        17
+2           18         5         2        15
+3           37         1         1         1
+4            3         0         1        36
+5            3         0         1        36
+6            0         0         0        40
+7            2         0         1        37
+8            0         2         0        38
+9            4         5        28         3
+10          38         0         2         0
+11          12         9         6        13
+12           8         4         7        21
+XX
+CC  program: feature
+CC  matrix.nb: 2
+CC  matrix.nb: 2
+CC  sites: 40
+CC  consensus.strict: taATTTTTGAtt
+CC  consensus.strict.rc: AATCAAAAATTA
+CC  consensus.IUPAC: ywATTTTTGAwt
+CC  consensus.IUPAC.rc: AWTCAAAAATWR
+CC  consensus.regexp: [ct][at]ATTTTTGA[at]t
+CC  consensus.regexp.rc: A[AT]TCAAAAAT[AT][AG]
+XX
+//

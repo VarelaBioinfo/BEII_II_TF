@@ -1,0 +1,124 @@
+# Descubrimiento de motivos
+
+## Historia 
+
+Predecir los sitios sería importante pero más adelante se va a caracterizar la transcriptómica 
+Si yo te doy un grupo de genes que responde a una fuente de nitrógeno.
+
+## Motif discovery 
+
+- solo existían microarreglos 
+- Yo tengo 20 genes cooregulados y quiero saber cuales son los motivos y los sitios en sus promotores 
+- Te doy genes, no te doy el motivo 
+  - se sabe que existe un factor transcripcional que regula a todos los genes 
+  - El factor puede pegarse en cualquiera de las dos direcciones 
+    - Hace una rotación cada 10.5 nucleotidos 
+    - Estamos en un espacio 3D 
+    - los sitios de interacción entre el factor y el DNA son muy cortos
+
+- 7 genes que se expresan en ausencia de metionina MET
+- 7 genes expresados en bajas condiciones de nitrógeno NIT
+- 5 genes expresado bajo estrés de fosfato PHO
+
+1. Verificar en los 7 genes de nitrogeno si se enocntraba o no el motivo gataag y cuantas ocurrencias 
+- Se analiza los genes río arriba 
+- los 4 regulones su palabra más frecuente era aaaaaa
+- Se sabía en levadura que el hecho de encontrar en una cadena u otra el sitio no importaba 
+  - Se agrupa cada hexanucleótido con su reversa complementaria 
+  - ordenados por número de ocurrencias 
+  - los hexanucleótidos correctos en azul
+    - tenía una frecuencia media como de 10 
+
+**¿Cómo saber cuales son las correctas?**
+
+- Desarrollar un modelo para calcular la frecuencia observada 
+- Comparar las ocurrencias observadas vs lo que esperas al azar 
+- Las frecuencias de hexanucleótidos varian mucho entre codificante y no codificante 
+- comparas las ocurrencias observadas en coding vs intergenic sequences 
+- las probabilidades de encontrar un hexanucleótido son distintas entre distintos organismos 
+- GATAAG, cual es la que tiene más ocurrencias observadas vs las que espero de ella 
+
+Contamos 
+positivos = posiciones en donde tenoms la palabra
+contamos = todas las posiciones en donde no tenemos CATG
+metionina y no metionina = si sale una dependencia muy fuerte entonces tenemos un p-value 
+
+- z socre reposa en normalidad 
+- modelo de bernoulli 
+  - en cada posición inica un hexanucleótido, exito o fracas
+  - en cada posición checo si tengo éxito o fracaso 
+  - cuento en metionina en 5000 posiciones y en cada posición checo los exitos y los fracasos 
+  - Checo con el modelo de Bernoulli 
+  - Tengo las frecuencias de observar 
+  
+## Modelo de Bernoulli 
+
+- para calcular un p-value
+- para calcular un e-value 
+
+- Ejemplo 
+  - para nitrogeno 
+  - sobrelapan y parece ser parte de un heptanucleotido 
+  - CACGTG 12 ocurrencias y espero menos de 1 
+  
+¿Cómo defino el punto de corte para poner un valor de p?
+Una medida de que tan lejos está de la diagonal es observed/expected ratio 
+  - eso nunca debe usarse en estadística 
+
+- Log-likelihood ratio 
+  - necesitas muchos observados 
+
+- z-score
+  - supone una distribución normal
+
+- Poisson 
+
+- Binomial (Jacques)
+  - Probabilidad de observar 26 ocurrencias con un modelo de bernoulli 
+  - vamos a detectar los kmers
+  - 
+
+    
+## Background model 
+
+- Existen dependencias 
+  - más AA en el genoma 
+  - Representación es mejor con modelos de Markov 
+- consensus 
+
+
+### Aproximaciones basadas en matrices 
+
+- Giibbs (stochastich EM)
+
+
+## Ejercicio 2 
+
+Elegir un factor transcripcional 
+- Elegí PHO
+Sacar sus secuencias upstream 
+default = -1 a -800
+
+1. Correr oligoanálisis para descubrir motivos 
+- Se deja genome subset para estimar la frecuencia de hexanucleótidos
+
+[oligoanálisis](http://rsat-tagc.univ-mrs.fr/rsat/oligo-analysis.cgi)
+
+2. Mandar los resultados a DNA pattern
+
+[dna pattern](http://rsat-tagc.univ-mrs.fr/rsat/dna-pattern.cgi)
+
+3. Manadar las ocurrencias de hexanucleotidos a feature-map para visualizar  
+[feature map](http://rsat-tagc.univ-mrs.fr/rsat/feature-map.cgi)
+
+
+## Generate random seq of the same size as the upstream sequences of your region
+- Select a random set of genes of the same size as your regulons 
+[random sequence result](http://embnet.ccg.unam.mx/rsat/random-seq.cgi)
+- Do the same analysis
+  - oligonucleotide analysis 6,7,8 
+  
+- Report the results (max sig)
+
+
+

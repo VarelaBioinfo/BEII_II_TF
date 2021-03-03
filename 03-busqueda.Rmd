@@ -1,0 +1,70 @@
+# Búsqueda de motivos
+
+## Total number of PSSM matches in all randomized promoters 
+
+## Generar secuencias aleatorias para verificar la tasa de falsos positivos 
+
+Generamos secuencias aleatorias (hipótesis nula)
+
+[Bernoulli](http://embnet.ccg.unam.mx/rsat/random-seq.cgi)
+[Markov 1](http://embnet.ccg.unam.mx/rsat/random-seq.cgi)
+[Markov 2](http://embnet.ccg.unam.mx/rsat/random-seq.cgi)
+
+
+## Matrix scan-result 
+
+[Matrix scan Markov 1](http://embnet.ccg.unam.mx/rsat/matrix-scan.cgi)
+[Matrix scan Markov 2]()
+
+Sacando todas las secuecnias rio arriba de e.coli no overlapping
+
+[E.coli nooverlaping noorf](http://embnet.ccg.unam.mx/rsat/retrieve-seq.cgi)
+
+[Random sequences from e.coli nooverlapping noorf](http://embnet.ccg.unam.mx/rsat/random-seq.cgi)
+
+## Bernoulli
+
+La probabilidad de una secuecnia es el producto de la probabilidad de los residuos de la secuencia 
+
+- Asume que cada residuo tiene una probabilidad específica previa
+- Son independientes 
+
+$P(CATG)=P(C)*P(A)*P(T)*P(G)$
+
+## Dependencia Markov 2 
+
+$P(A|AG)$
+
+- Se genera una matriz de transición 
+- cómo se estima una matriz 
+
+
+
+## 3 Grados de libertad
+si yo ya conozco la probabilidad de A, C y G entonces la de T es uno menos la de las otras 3 entonces ya no es libre
+
+## Dependencia Markov 1
+
+$P(A|G)$
+
+La probabilidad de un nucleotido dado un prefijo
+
+$P(G|T)$
+
+Es la proporción de los G 
+Numero de Tg/la suma de TA, TC, TG, TT (puedo hacerlo en frecuencias)
+
+$\frac{TG}{Frecuencia(TA+ TC+TG+TT)}$
+
+Calculo la probabilidad del producto de la probabilidad de cada nucleótido según el nucleótido posterior 
+
+
+Ejercicio
+[Total number of PSSM matches in all randomized promoters ](http://embnet.ccg.unam.mx/rsat//tmp/apache/2021/03/02/matrix-scan_2021-03-02.101640_s4aDVc.ft)
+
+Randomized promoters with at least one PSSM match
+
+`grep 'site\s' file.ft | cut -f1 | uniq | grep -c 'rand'`
+
+secuencias verdaderas pero con una matriz aleatoria 
+

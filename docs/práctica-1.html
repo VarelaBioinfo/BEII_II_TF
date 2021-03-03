@@ -24,7 +24,7 @@
 <meta name="author" content="Alfredo Varela Vega" />
 
 
-<meta name="date" content="2021-03-01" />
+<meta name="date" content="2021-03-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="factores-de-transcripción.html"/>
-<link rel="next" href="methods.html"/>
+<link rel="next" href="búsqueda-de-motivos.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -90,10 +90,22 @@
 <li class="chapter" data-level="3.10" data-path="práctica-1.html"><a href="práctica-1.html#convert-background-modell"><i class="fa fa-check"></i><b>3.10</b> Convert Background modell</a></li>
 <li class="chapter" data-level="3.11" data-path="práctica-1.html"><a href="práctica-1.html#position-scanning-matrix"><i class="fa fa-check"></i><b>3.11</b> Position scanning matrix</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
-<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a><ul>
-<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
-<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+<li class="chapter" data-level="4" data-path="búsqueda-de-motivos.html"><a href="búsqueda-de-motivos.html"><i class="fa fa-check"></i><b>4</b> Búsqueda de motivos</a><ul>
+<li class="chapter" data-level="4.1" data-path="búsqueda-de-motivos.html"><a href="búsqueda-de-motivos.html#total-number-of-pssm-matches-in-all-randomized-promoters"><i class="fa fa-check"></i><b>4.1</b> Total number of PSSM matches in all randomized promoters</a></li>
+<li class="chapter" data-level="4.2" data-path="búsqueda-de-motivos.html"><a href="búsqueda-de-motivos.html#generar-secuencias-aleatorias-para-verificar-la-tasa-de-falsos-positivos"><i class="fa fa-check"></i><b>4.2</b> Generar secuencias aleatorias para verificar la tasa de falsos positivos</a></li>
+<li class="chapter" data-level="4.3" data-path="búsqueda-de-motivos.html"><a href="búsqueda-de-motivos.html#bernoulli"><i class="fa fa-check"></i><b>4.3</b> Bernoulli</a></li>
+<li class="chapter" data-level="4.4" data-path="búsqueda-de-motivos.html"><a href="búsqueda-de-motivos.html#dependencia-markov-2"><i class="fa fa-check"></i><b>4.4</b> Dependencia Markov 2</a></li>
+<li class="chapter" data-level="4.5" data-path="búsqueda-de-motivos.html"><a href="búsqueda-de-motivos.html#grados-de-libertad"><i class="fa fa-check"></i><b>4.5</b> 3 Grados de libertad</a></li>
+<li class="chapter" data-level="4.6" data-path="búsqueda-de-motivos.html"><a href="búsqueda-de-motivos.html#dependencia-markov-1"><i class="fa fa-check"></i><b>4.6</b> Dependencia Markov 1</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="descubrimiento-de-motivos.html"><a href="descubrimiento-de-motivos.html"><i class="fa fa-check"></i><b>5</b> Descubrimiento de motivos</a><ul>
+<li class="chapter" data-level="5.1" data-path="descubrimiento-de-motivos.html"><a href="descubrimiento-de-motivos.html#historia"><i class="fa fa-check"></i><b>5.1</b> Historia</a></li>
+<li class="chapter" data-level="5.2" data-path="descubrimiento-de-motivos.html"><a href="descubrimiento-de-motivos.html#motif-discovery"><i class="fa fa-check"></i><b>5.2</b> Motif discovery</a></li>
+<li class="chapter" data-level="5.3" data-path="descubrimiento-de-motivos.html"><a href="descubrimiento-de-motivos.html#modelo-de-bernoulli"><i class="fa fa-check"></i><b>5.3</b> Modelo de Bernoulli</a></li>
+<li class="chapter" data-level="5.4" data-path="descubrimiento-de-motivos.html"><a href="descubrimiento-de-motivos.html#background-model"><i class="fa fa-check"></i><b>5.4</b> Background model</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="descubrimiento-de-motivos.html"><a href="descubrimiento-de-motivos.html#aproximaciones-basadas-en-matrices"><i class="fa fa-check"></i><b>5.4.1</b> Aproximaciones basadas en matrices</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="descubrimiento-de-motivos.html"><a href="descubrimiento-de-motivos.html#ejercicio-2"><i class="fa fa-check"></i><b>5.5</b> Ejercicio 2</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -119,6 +131,7 @@
             <section class="normal" id="section-">
 <div id="práctica-1" class="section level1">
 <h1><span class="header-section-number">Chapter 3</span> Práctica 1</h1>
+<p><a href="mailto:jacques.van-helden@univ-amu.fr" class="email">jacques.van-helden@univ-amu.fr</a></p>
 <p><a href="http://jvanheld.github.io/LCG_BEII/practicals/motif_search_RegulonDB/motif_search_RegulonDB.html#collective_table_for_the_2020_practical">Ejercicios TF</a></p>
 <div id="introduction" class="section level2">
 <h2><span class="header-section-number">3.1</span> Introduction</h2>
@@ -345,7 +358,7 @@ son los que encontre / todos los que existen</p>
         </div>
       </div>
 <a href="factores-de-transcripción.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="methods.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="búsqueda-de-motivos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

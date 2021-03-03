@@ -1,0 +1,45 @@
+; pattern-assembly  -v 1 -subst 1 -toppat 50 -2str -max_asmb_nb 20 -i $RSAT/public_html/tmp/apache/2021/03/02/oligo-analysis_2021-03-02.152117_zHodOe.tab -o $RSAT/public_html/tmp/apache/2021/03/02/oligo-analysis_2021-03-02.152117_zHodOe.asmb
+; Input file	/space23/rsat/public_html/tmp/apache/2021/03/02/oligo-analysis_2021-03-02.152117_zHodOe.tab
+; Output file	/space23/rsat/public_html/tmp/apache/2021/03/02/oligo-analysis_2021-03-02.152117_zHodOe.asmb
+; Input score column           	8
+; Output score column          	0
+; Strand-insensitive assembly
+; Max flanking bases           	1
+; Max substitutions            	1
+; Min matches                  	0
+; Min weight                   	0
+; Max assembly size            	50
+; Max assembly width           	0
+; Top number of patterns       	50
+; Number of input patterns     	5
+;
+
+; assembly # 1	seed: tacgaaa	2 assembled patterns	length 8
+; alignt	 rev_cpl	score
+tacgaaa.	.tttcgta	1.18
+tacgaaaa	ttttcgta	0.40
+tacgaaaa	ttttcgta	1.18	best consensus
+
+; assembly # 2	seed: agcaat	1 assembled patterns	length 6
+;alignt	rev_cpl	score
+agcaat	attgct	0.82
+agcaat	attgct	0.82	best consensus
+
+; assembly # 3	seed: atttttga	1 assembled patterns	length 8
+; alignt	 rev_cpl	score
+atttttga	tcaaaaat	0.30
+atttttga	tcaaaaat	0.30	best consensus
+
+; assembly # 4	seed: gagcaata	2 assembled patterns	length 8
+; alignt	 rev_cpl	score
+gagcaata	tattgctc	0.15
+.agcaat.	.attgct.	0.82
+gagcaata	tattgctc	0.82	best consensus
+; Host name	sinik
+; Job started	2021-03-02.152124
+; Job done	2021-03-02.152124
+; Seconds	0.29
+;	user	0.29
+;	system	0.02
+;	cuser	0
+;	csystem	0

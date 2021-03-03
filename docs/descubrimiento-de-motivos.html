@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 Final Words | Bioinformática y estadística II Módulo II</title>
+  <title>Chapter 5 Descubrimiento de motivos | Bioinformática y estadística II Módulo II</title>
   <meta name="description" content="Módulo impartido por el profesor Jacques van Helden" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 Final Words | Bioinformática y estadística II Módulo II" />
+  <meta property="og:title" content="Chapter 5 Descubrimiento de motivos | Bioinformática y estadística II Módulo II" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 Final Words | Bioinformática y estadística II Módulo II" />
+  <meta name="twitter:title" content="Chapter 5 Descubrimiento de motivos | Bioinformática y estadística II Módulo II" />
   
   <meta name="twitter:description" content="Módulo impartido por el profesor Jacques van Helden" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="descubrimiento-de-motivos.html"/>
-<link rel="next" href="references.html"/>
+<link rel="prev" href="búsqueda-de-motivos.html"/>
+<link rel="next" href="final-words.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -129,18 +129,162 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="final-words" class="section level1">
-<h1><span class="header-section-number">Chapter 6</span> Final Words</h1>
-<p>We have finished a nice book.</p>
+<div id="descubrimiento-de-motivos" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Descubrimiento de motivos</h1>
+<div id="historia" class="section level2">
+<h2><span class="header-section-number">5.1</span> Historia</h2>
+<p>Predecir los sitios sería importante pero más adelante se va a caracterizar la transcriptómica
+Si yo te doy un grupo de genes que responde a una fuente de nitrógeno.</p>
+</div>
+<div id="motif-discovery" class="section level2">
+<h2><span class="header-section-number">5.2</span> Motif discovery</h2>
+<ul>
+<li>solo existían microarreglos</li>
+<li>Yo tengo 20 genes cooregulados y quiero saber cuales son los motivos y los sitios en sus promotores</li>
+<li>Te doy genes, no te doy el motivo
+<ul>
+<li>se sabe que existe un factor transcripcional que regula a todos los genes</li>
+<li>El factor puede pegarse en cualquiera de las dos direcciones
+<ul>
+<li>Hace una rotación cada 10.5 nucleotidos</li>
+<li>Estamos en un espacio 3D</li>
+<li>los sitios de interacción entre el factor y el DNA son muy cortos</li>
+</ul></li>
+</ul></li>
+<li>7 genes que se expresan en ausencia de metionina MET</li>
+<li>7 genes expresados en bajas condiciones de nitrógeno NIT</li>
+<li>5 genes expresado bajo estrés de fosfato PHO</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Verificar en los 7 genes de nitrogeno si se enocntraba o no el motivo gataag y cuantas ocurrencias</li>
+</ol>
+<ul>
+<li>Se analiza los genes río arriba</li>
+<li>los 4 regulones su palabra más frecuente era aaaaaa</li>
+<li>Se sabía en levadura que el hecho de encontrar en una cadena u otra el sitio no importaba
+<ul>
+<li>Se agrupa cada hexanucleótido con su reversa complementaria</li>
+<li>ordenados por número de ocurrencias</li>
+<li>los hexanucleótidos correctos en azul
+<ul>
+<li>tenía una frecuencia media como de 10</li>
+</ul></li>
+</ul></li>
+</ul>
+<p><strong>¿Cómo saber cuales son las correctas?</strong></p>
+<ul>
+<li>Desarrollar un modelo para calcular la frecuencia observada</li>
+<li>Comparar las ocurrencias observadas vs lo que esperas al azar</li>
+<li>Las frecuencias de hexanucleótidos varian mucho entre codificante y no codificante</li>
+<li>comparas las ocurrencias observadas en coding vs intergenic sequences</li>
+<li>las probabilidades de encontrar un hexanucleótido son distintas entre distintos organismos</li>
+<li>GATAAG, cual es la que tiene más ocurrencias observadas vs las que espero de ella</li>
+</ul>
+<p>Contamos
+positivos = posiciones en donde tenoms la palabra
+contamos = todas las posiciones en donde no tenemos CATG
+metionina y no metionina = si sale una dependencia muy fuerte entonces tenemos un p-value</p>
+<ul>
+<li>z socre reposa en normalidad</li>
+<li>modelo de bernoulli
+<ul>
+<li>en cada posición inica un hexanucleótido, exito o fracas</li>
+<li>en cada posición checo si tengo éxito o fracaso</li>
+<li>cuento en metionina en 5000 posiciones y en cada posición checo los exitos y los fracasos</li>
+<li>Checo con el modelo de Bernoulli</li>
+<li>Tengo las frecuencias de observar</li>
+</ul></li>
+</ul>
+</div>
+<div id="modelo-de-bernoulli" class="section level2">
+<h2><span class="header-section-number">5.3</span> Modelo de Bernoulli</h2>
+<ul>
+<li><p>para calcular un p-value</p></li>
+<li><p>para calcular un e-value</p></li>
+<li><p>Ejemplo</p>
+<ul>
+<li>para nitrogeno</li>
+<li>sobrelapan y parece ser parte de un heptanucleotido</li>
+<li>CACGTG 12 ocurrencias y espero menos de 1</li>
+</ul></li>
+</ul>
+<p>¿Cómo defino el punto de corte para poner un valor de p?
+Una medida de que tan lejos está de la diagonal es observed/expected ratio
+- eso nunca debe usarse en estadística</p>
+<ul>
+<li><p>Log-likelihood ratio</p>
+<ul>
+<li>necesitas muchos observados</li>
+</ul></li>
+<li><p>z-score</p>
+<ul>
+<li>supone una distribución normal</li>
+</ul></li>
+<li><p>Poisson</p></li>
+<li><p>Binomial (Jacques)</p>
+<ul>
+<li>Probabilidad de observar 26 ocurrencias con un modelo de bernoulli</li>
+<li>vamos a detectar los kmers</li>
+<li></li>
+</ul></li>
+</ul>
+</div>
+<div id="background-model" class="section level2">
+<h2><span class="header-section-number">5.4</span> Background model</h2>
+<ul>
+<li>Existen dependencias
+<ul>
+<li>más AA en el genoma</li>
+<li>Representación es mejor con modelos de Markov</li>
+</ul></li>
+<li>consensus</li>
+</ul>
+<div id="aproximaciones-basadas-en-matrices" class="section level3">
+<h3><span class="header-section-number">5.4.1</span> Aproximaciones basadas en matrices</h3>
+<ul>
+<li>Giibbs (stochastich EM)</li>
+</ul>
+</div>
+</div>
+<div id="ejercicio-2" class="section level2">
+<h2><span class="header-section-number">5.5</span> Ejercicio 2</h2>
+<p>Elegir un factor transcripcional
+- Elegí PHO
+Sacar sus secuencias upstream
+default = -1 a -800</p>
+<ol style="list-style-type: decimal">
+<li>Correr oligoanálisis para descubrir motivos</li>
+</ol>
+<ul>
+<li>Se deja genome subset para estimar la frecuencia de hexanucleótidos</li>
+</ul>
+<p><a href="http://rsat-tagc.univ-mrs.fr/rsat/oligo-analysis.cgi">oligoanálisis</a></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Mandar los resultados a DNA pattern</li>
+</ol>
+<p><a href="http://rsat-tagc.univ-mrs.fr/rsat/dna-pattern.cgi">dna pattern</a></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Manadar las ocurrencias de hexanucleotidos a feature-map para visualizar<br />
+<a href="http://rsat-tagc.univ-mrs.fr/rsat/feature-map.cgi">feature map</a></li>
+</ol>
+<p>## Generate random seq of the same size as the upstream sequences of your region
+- Select a random set of genes of the same size as your regulons
+<a href="http://embnet.ccg.unam.mx/rsat/random-seq.cgi">random sequence result</a>
+- Do the same analysis
+- oligonucleotide analysis 6,7,8</p>
+<ul>
+<li>Report the results (max sig)</li>
+</ul>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="descubrimiento-de-motivos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="búsqueda-de-motivos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="final-words.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

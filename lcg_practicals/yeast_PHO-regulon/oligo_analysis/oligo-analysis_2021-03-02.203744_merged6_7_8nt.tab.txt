@@ -1,0 +1,227 @@
+; oligo-analysis  -v 1 -sort -i $RSAT/public_html/tmp/www-data/2021/03/02/retrieve-seq_2021-03-02.202238_LWbfM5.fasta.fasta.purged -format fasta -lth occ_sig 0 -uth rank 50 -return occ,proba,rank -2str -noov -quick_if_possible -seqtype dna -bg upstream-noorf -org Saccharomyces_cerevisiae -pseudo 0.01 -l 6 -o $RSAT/public_html/tmp/www-data/2021/03/02/oligo-analysis_2021-03-02.203744_tfIq6l_6nt.tab
+; Citation: van Helden et al. (1998). J Mol Biol 281(5), 827-42. 
+; Program version              	1.169
+; Quick counting mode          
+; Detection of over-represented words (right-tail test)
+; Oligomer length              	6
+; Input file                   	$RSAT/public_html/tmp/www-data/2021/03/02/retrieve-seq_2021-03-02.202238_LWbfM5.fasta.fasta.purged
+; Input format                 	fasta
+; Output file                  	$RSAT/public_html/tmp/www-data/2021/03/02/oligo-analysis_2021-03-02.203744_tfIq6l_6nt.tab
+; Discard overlapping matches
+; Counted on both strands
+; 	grouped by pairs of reverse complements
+; Background model             	upstream-noorf
+; Organism                     	Saccharomyces_cerevisiae
+; Background estimation method 	Frequency file
+; Expected frequency file      	$RSAT/public_html/data/genomes/Saccharomyces_cerevisiae/oligo-frequencies/6nt_upstream-noorf_Saccharomyces_cerevisiae-noov-2str.freq
+; Pseudo-frequency             	0.01
+; Pseudo-frequency per oligo   	4.80769230769231e-06
+; Sequence type                	DNA
+; Nb of sequences              	19
+; Sum of sequence lengths      	11199
+; discarded residues           	NA (quick mode)	 (other letters than ACGT)
+; discarded occurrences        	NA (quick mode)	 (contain discarded residues)
+; nb possible positions        	NA (quick mode)
+; total oligo occurrences      	10518
+; total overlapping occurrences	221
+; total non overlapping occ    	10297
+; alphabet size                	4
+; nb possible oligomers        	2080
+; oligomers tested for significance	2080
+; Sequences:
+;	PHO11	800
+;	PHO3	446
+;	PHO5	800
+;	PHO88	688
+;	PHO89	800
+;	PHO87	435
+;	PHO13	466
+;	PHO2	487
+;	PHO8	180
+;	PHO4	162
+;	PHO81	800
+;	PHO12	599
+;	PHO90	800
+;	PHO86	232
+;	PHO84	800
+;	PHO23	647
+;	PHO91	752
+;	PHO80	800
+;	PHO85	505
+;
+; column headers
+;	1	seq            	oligomer sequence
+;	2	id             	oligomer identifier
+;	3	exp_freq       	expected relative frequency
+;	4	occ            	observed occurrences
+;	5	exp_occ        	expected occurrences
+;	6	occ_P          	occurrence probability (binomial)
+;	7	occ_E          	E-value for occurrences (binomial)
+;	8	occ_sig        	occurrence significance (binomial)
+;	9	rank           	rank
+;	10	ovl_occ        	number of overlapping occurrences (discarded from the count)
+;	11	forbocc        	forbidden positions (to avoid self-overlap)
+#seq	id	exp_freq	occ	exp_occ	occ_P	occ_E	occ_sig	rank	ovl_occ	forbocc
+acgtgc	acgtgc|gcacgt	0.0002276885234	15	2.39	4e-08	8.3e-05	4.08	1	2	75
+acgtgg	acgtgg|ccacgt	0.0001973106916	11	2.08	1.2e-05	2.4e-02	1.62	2	1	55
+cccacg	cccacg|cgtggg	0.0001415079354	9	1.49	2.6e-05	5.4e-02	1.27	3	0	45
+cgcacg	cgcacg|cgtgcg	0.0001438192921	9	1.51	3e-05	6.1e-02	1.21	4	0	45
+cacgtg	cacgtg|cacgtg	0.0001566968513	9	1.65	5.7e-05	1.2e-01	0.93	5	0	45
+tgccaa	tgccaa|ttggca	0.0004905228071	15	5.16	0.00031	6.5e-01	0.19	6	0	75
+; Host name	rsat-tagc
+; Job started	2021-03-02.203745
+; Job done	2021-03-02.203746
+; Seconds	0.54
+;	user	0.54
+;	system	0.02
+;	cuser	0.63
+;	csystem	0.09
+; oligo-analysis  -v 1 -sort -i $RSAT/public_html/tmp/www-data/2021/03/02/retrieve-seq_2021-03-02.202238_LWbfM5.fasta.fasta.purged -format fasta -lth occ_sig 0 -uth rank 50 -return occ,proba,rank -2str -noov -quick_if_possible -seqtype dna -bg upstream-noorf -org Saccharomyces_cerevisiae -pseudo 0.01 -l 7 -o $RSAT/public_html/tmp/www-data/2021/03/02/oligo-analysis_2021-03-02.203744_tfIq6l_7nt.tab
+; Citation: van Helden et al. (1998). J Mol Biol 281(5), 827-42. 
+; Program version              	1.169
+; Quick counting mode          
+; Detection of over-represented words (right-tail test)
+; Oligomer length              	7
+; Input file                   	$RSAT/public_html/tmp/www-data/2021/03/02/retrieve-seq_2021-03-02.202238_LWbfM5.fasta.fasta.purged
+; Input format                 	fasta
+; Output file                  	$RSAT/public_html/tmp/www-data/2021/03/02/oligo-analysis_2021-03-02.203744_tfIq6l_7nt.tab
+; Discard overlapping matches
+; Counted on both strands
+; 	grouped by pairs of reverse complements
+; Background model             	upstream-noorf
+; Organism                     	Saccharomyces_cerevisiae
+; Background estimation method 	Frequency file
+; Expected frequency file      	$RSAT/public_html/data/genomes/Saccharomyces_cerevisiae/oligo-frequencies/7nt_upstream-noorf_Saccharomyces_cerevisiae-noov-2str.freq
+; Pseudo-frequency             	0.01
+; Pseudo-frequency per oligo   	1.220703125e-06
+; Sequence type                	DNA
+; Nb of sequences              	19
+; Sum of sequence lengths      	11199
+; discarded residues           	NA (quick mode)	 (other letters than ACGT)
+; discarded occurrences        	NA (quick mode)	 (contain discarded residues)
+; nb possible positions        	NA (quick mode)
+; total oligo occurrences      	10492
+; total overlapping occurrences	164
+; total non overlapping occ    	10328
+; alphabet size                	4
+; nb possible oligomers        	8192
+; oligomers tested for significance	8192
+; Sequences:
+;	PHO11	800
+;	PHO3	446
+;	PHO5	800
+;	PHO88	688
+;	PHO89	800
+;	PHO87	435
+;	PHO13	466
+;	PHO2	487
+;	PHO8	180
+;	PHO4	162
+;	PHO81	800
+;	PHO12	599
+;	PHO90	800
+;	PHO86	232
+;	PHO84	800
+;	PHO23	647
+;	PHO91	752
+;	PHO80	800
+;	PHO85	505
+;
+; column headers
+;	1	seq            	oligomer sequence
+;	2	id             	oligomer identifier
+;	3	exp_freq       	expected relative frequency
+;	4	occ            	observed occurrences
+;	5	exp_occ        	expected occurrences
+;	6	occ_P          	occurrence probability (binomial)
+;	7	occ_E          	E-value for occurrences (binomial)
+;	8	occ_sig        	occurrence significance (binomial)
+;	9	rank           	rank
+;	10	ovl_occ        	number of overlapping occurrences (discarded from the count)
+;	11	forbocc        	forbidden positions (to avoid self-overlap)
+#seq	id	exp_freq	occ	exp_occ	occ_P	occ_E	occ_sig	rank	ovl_occ	forbocc
+cacgtgg	cacgtgg|ccacgtg	0.0000423134433	7	0.44	4.6e-07	3.7e-03	2.43	1	1	42
+acgtggg	acgtggg|cccacgt	0.0000433076225	6	0.45	8.3e-06	6.8e-02	1.17	2	0	36
+acgtgcg	acgtgcg|cgcacgt	0.0000446331948	6	0.47	9.8e-06	8.0e-02	1.09	3	0	36
+cgtgcga	cgtgcga|tcgcacg	0.0000323716513	5	0.34	2.8e-05	2.3e-01	0.63	4	0	30
+; Host name	rsat-tagc
+; Job started	2021-03-02.203746
+; Job done	2021-03-02.203749
+; Seconds	1.7
+;	user	1.7
+;	system	0.04
+;	cuser	0.63
+;	csystem	0.1
+; oligo-analysis  -v 1 -sort -i $RSAT/public_html/tmp/www-data/2021/03/02/retrieve-seq_2021-03-02.202238_LWbfM5.fasta.fasta.purged -format fasta -lth occ_sig 0 -uth rank 50 -return occ,proba,rank -2str -noov -quick_if_possible -seqtype dna -bg upstream-noorf -org Saccharomyces_cerevisiae -pseudo 0.01 -l 8 -o $RSAT/public_html/tmp/www-data/2021/03/02/oligo-analysis_2021-03-02.203744_tfIq6l_8nt.tab
+; Citation: van Helden et al. (1998). J Mol Biol 281(5), 827-42. 
+; Program version              	1.169
+; Quick counting mode          
+; Detection of over-represented words (right-tail test)
+; Oligomer length              	8
+; Input file                   	$RSAT/public_html/tmp/www-data/2021/03/02/retrieve-seq_2021-03-02.202238_LWbfM5.fasta.fasta.purged
+; Input format                 	fasta
+; Output file                  	$RSAT/public_html/tmp/www-data/2021/03/02/oligo-analysis_2021-03-02.203744_tfIq6l_8nt.tab
+; Discard overlapping matches
+; Counted on both strands
+; 	grouped by pairs of reverse complements
+; Background model             	upstream-noorf
+; Organism                     	Saccharomyces_cerevisiae
+; Background estimation method 	Frequency file
+; Expected frequency file      	$RSAT/public_html/data/genomes/Saccharomyces_cerevisiae/oligo-frequencies/8nt_upstream-noorf_Saccharomyces_cerevisiae-noov-2str.freq
+; Pseudo-frequency             	0.01
+; Pseudo-frequency per oligo   	3.03988326848249e-07
+; Sequence type                	DNA
+; Nb of sequences              	19
+; Sum of sequence lengths      	11199
+; discarded residues           	NA (quick mode)	 (other letters than ACGT)
+; discarded occurrences        	NA (quick mode)	 (contain discarded residues)
+; nb possible positions        	NA (quick mode)
+; total oligo occurrences      	10475
+; total overlapping occurrences	85
+; total non overlapping occ    	10390
+; alphabet size                	4
+; nb possible oligomers        	32896
+; oligomers tested for significance	32896
+; Sequences:
+;	PHO11	800
+;	PHO3	446
+;	PHO5	800
+;	PHO88	688
+;	PHO89	800
+;	PHO87	435
+;	PHO13	466
+;	PHO2	487
+;	PHO8	180
+;	PHO4	162
+;	PHO81	800
+;	PHO12	599
+;	PHO90	800
+;	PHO86	232
+;	PHO84	800
+;	PHO23	647
+;	PHO91	752
+;	PHO80	800
+;	PHO85	505
+;
+; column headers
+;	1	seq            	oligomer sequence
+;	2	id             	oligomer identifier
+;	3	exp_freq       	expected relative frequency
+;	4	occ            	observed occurrences
+;	5	exp_occ        	expected occurrences
+;	6	occ_P          	occurrence probability (binomial)
+;	7	occ_E          	E-value for occurrences (binomial)
+;	8	occ_sig        	occurrence significance (binomial)
+;	9	rank           	rank
+;	10	ovl_occ        	number of overlapping occurrences (discarded from the count)
+;	11	forbocc        	forbidden positions (to avoid self-overlap)
+#seq	id	exp_freq	occ	exp_occ	occ_P	occ_E	occ_sig	rank	ovl_occ	forbocc
+cacgtggg	cacgtggg|cccacgtg	0.0000119158603	5	0.12	2.3e-07	7.5e-03	2.13	1	0	35
+; Host name	rsat-tagc
+; Job started	2021-03-02.203749
+; Job done	2021-03-02.203756
+; Seconds	6.48
+;	user	6.48
+;	system	0.14
+;	cuser	0.68
+;	csystem	0.1
