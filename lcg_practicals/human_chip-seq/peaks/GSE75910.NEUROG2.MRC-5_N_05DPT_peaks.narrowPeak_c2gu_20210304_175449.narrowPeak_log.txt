@@ -1,0 +1,23 @@
+; fetch-sequences  -v 1 -genome hg38 -header_format galaxy -i $RSAT/public_html/tmp/apache/2021/03/04/GSE75910.NEUROG2.MRC-5_N_05DPT_peaks.narrowPeak_c2gu_20210304_175449.narrowPeak -o $RSAT/public_html/tmp/apache/2021/03/04/GSE75910.NEUROG2.MRC-5_N_05DPT_peaks.narrowPeak_c2gu_20210304_175449.narrowPeak.fasta
+; Program version       	1.34
+; Genome                	hg38
+; DAS server URL        	http://genome.cse.ucsc.edu/cgi-bin/das/hg38
+; Reference             	segment
+; Upstream extension    	0
+; Downstream extension  	0
+; Invalid rows in query file	0
+; Input files
+;	input        	/vh/rsat/rsat/public_html/tmp/apache/2021/03/04/GSE75910.NEUROG2.MRC-5_N_05DPT_peaks.narrowPeak_c2gu_20210304_175449.narrowPeak
+; Output files
+;	log          	/vh/rsat/rsat/public_html/tmp/apache/2021/03/04/GSE75910.NEUROG2.MRC-5_N_05DPT_peaks.narrowPeak_c2gu_20210304_175449.narrowPeak_log.txt
+;	output       	/vh/rsat/rsat/public_html/tmp/apache/2021/03/04/GSE75910.NEUROG2.MRC-5_N_05DPT_peaks.narrowPeak_c2gu_20210304_175449.narrowPeak.fasta
+; sequences           	20203
+; length sum          	5246340
+; Host name	biow
+; Job started	2021-03-04.175449
+; Job done	2021-03-04.175505
+; Seconds	2.5
+;	user	2.5
+;	system	0.11
+;	cuser	0
+;	csystem	0

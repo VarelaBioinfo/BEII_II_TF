@@ -1,0 +1,351 @@
+# Investigación genómica del origen de Sars-Cov2
+
+## Carta firmada por 26 científicos para determinar los orgienes del Sars-Cov2
+
+> Thinking must never be submitted, neither to a dogma, nor to  a party, nor to a passion, nor to an interest...
+
+Principio de Popper
+
+- Cualquier teoría científica debe ser falscifable 
+  - Abren la puerta a una observación 
+  
+Teoría de revoluciones Científicos 
+
+huesped intermedio = pangolin
+  - el virus secuenciado en pangolin tiene una proteina spike que no puede interacturar con la proteína S del pangolín
+huesped proximal 
+
+## l´origine de ce cours 
+
+Etienne Decroly 
+  - virólogo en sars-cov2 
+      - Para él no era claro de donde viene y no le parecía improbable que viniera de un lab 
+        - Wujan 
+          - gain of function, mutaciones para aumentar la virulencia de un virus 
+
+José Halloy
+  - Biólo de sistemas 
+
+Didier Casane 
+  - Filogenia molecular 
+  
+Erwan Sallard
+  - Estudiante de maestría 
+  
+  > Retrouver les origines du SARS-CoV-2 dans les phylogénies de coronavirus 
+  > Tracing the origins of SARS-CoV-2 in coronavirus phylogenies 
+  
+  Bajar lecturas brutas de viruses
+  Ensamblarlo
+  Hacer 
+  
+## Biología 
+
+- proteínas spike 
+  - centrales en la patogenicidad 
+  - con ellas interactua en la proteína huesped 
+  - hemaglutinin-esterase 
+  - Están expuestas por lo que son el blanco del sistema inmunitario 
+  - RNA doble cadena 
+  - RNA de genoma
+  - RNA+ se replica como RNA- y luego se expresa para hacer RNA+ 
+  - N protein : estabiliza el RNA
+  - la proteina spike interactua con ace2 que es el blanco 
+    - polymerasa de RNA dependiente de RNA 
+      - virus viene con su proteina para replicar de RNA a RNA 
+      - SPike
+        - 2 subdominios  provienen de un polipeptido
+          - s1 
+          - s2
+        - RBD receptor binding domain 
+        - sitio de corte reconocido por la proteina furina 
+          - ninguno de los beta coronavirus tiene ese sitio furina 
+          - es una novedad 
+          - Es necesario para activar la proteína 
+          - La persona que descubrió que tiene el sitio furina es Ethienne 
+            - enzima que producen nuestras celulas 
+              - la furina es ubicua en las células 
+              - por eso es más peligroso 
+              - porque se activa por la furina que está en todas las células 
+              - por eso tiene acciones en lugares en donde no actuan los virus de la gripe 
+              - Estructura es dinámica 
+                - las cariante de ahora cambian la flexibilidad de la proteina 
+                  - variante de febrero 
+                    - remploazo en 2 meses las variantes antes conocida posicion de aminoácido 614 de la proteína spike
+
+## Ecología
+
+Casi todos os que conocemos tienen una reserva natural en pájaros o murciélagos 
+
+- cadena de huesped intermedio 
+- murciélago a humano 
+- se pensó que se habia encontrado el huesped proximal el pangolin 
+  - se aislaron pangolines 
+  - el problema es que en el mercado de wuhan no se vendían 
+  - en el ensamblaje del punto de vista molecular nadie entiende la relación entre virus putativo de pangolin y que no pueden infectara a un pangolin 
+  
+HuSARS-Fr fue el de cibeth 
+
+## Las cepas más cercanas 
+
+**en murciélago** 
+BtZXC21 2015 
+BtZC45 2017
+BtRATG3 2013 es el más parecido al del humano 
+
+**en pangolin**
+PnGu1-2019
+GXP1E 2017
+
+**En humano**
+HuCov2 2020
+
+
+fragmento de 400 pares de bases 
+  - fragemnto de la RNA polimerasa de pendiente de rna RdR polimerase 
+  
+  
+Existen muchos virus en murciélago con capacidad pandémica 
+batwoman caracterizó la secuecnia de virus humano 
+
+
+para cada ventana se mide el porcentaje de identidad con sars-cov 2 
+- la más proxima es la Bat CoV RaTG13
+  - identindad promedio de 96.1% 
+    - no es claro 
+    - la region conservada es la de la polimerasa
+    - la caida en la ventana es el área de recombinación 
+
+ya hay artículo de la WHO
+- mercado primer cluster pero ya habían antes contaminados 
+- provincia de Hubei 
+  - Wuhan 
+  - a 1800 km de la mina de Yunnan a la ciudad de Wuhan 
+  
+la idea es que supuestamente en un virus de pangolin se encontró una parte pequeña en donde se caen los perfiles de alineamiento 
+
+- recombinación de virus 
+- o bien un murcielago contamino a un pangolin y recombinaron 
+- o bien un murcielago contamino a un pangoliny recombinarion y luego un pangolin transmitio a otro que lo transmitio al humano 
+- recombinación en el pangolin y se contaminó a cualquier otro animal que lo contaminó al humano (hipótesis actual a ser probada por la WHO)
+- los pangolines caracterizados de la provincia de guangdong 
+- que hizo que un murciélago lejos del pangolin por las provincias recombinaran 
+
+## Aislaron un pangolin sars
+- se ve que 
+parte de proteina spike del RBD en donde hay 7 aminoacidos muy concoidos que ahacen que interactue con S 
+- 40 a 70 años de divergencia evolutiva con el Ratg13 aislada de una mina de la provinica de yuhan 
+- mina en onde hubieron mineros mandados ahí son seis 
+  - entre los 6 su misión era recolectar cacas de murcielago 
+  - 3 de los 6 murieron de neumonia atípica 
+  - el laboratorio de wuhan había sido formada por francia 
+  - los chinos 
+  furina 
+  
+  
+Analizasr los archivos e identificar a pacientes similares de sintomas 
+- buscar las muestras y ver si provenía de ahí 
+
+template switching
+- cuando un organismo está conifectado por dos coronaviruses 
+- la polimerasa empieza a replicar a un coronavirus y salta a la misma posición pero del otro virus, a veces puede volcer 
+viras A virus B virus A termina la secuenciación 
+
+10 febrero en the lancet 
+- necesitamos sooprtar 
+statement in support of the scientist, decir que la comunidad debe de tomar una postura va en contra de la ciencia. 
+todo debe ser cuestionable 
+Teter Daszak preseidente que financia 
+- mails que mandó a los virologos para soportar 
+- estamos en una situación de censura 
+  - frontera entre ciencia y sociedad
+    - eventos que tienen una implicación tan importante que es difícil saber las motiviaciones reales 
+    - los riesgos para tu posición 
+    - fondos de laboratorio 
+    - tomar distancia 
+      - qué cosas puedo corroborar fuera de mi sentimientos 
+      - los periódicos 
+      - andersen the proximal origin of SARS-CoV-2
+        - una piedra angular de su argumentación es el pangolin 
+        - rechazan el origen cientifico 
+          - se pueden construir virus con biología sintética 
+          - Es una pregunta científica 
+          
+          
+## Ejercicio Sars-Cov2
+
+En la región de spkie hay 4 lugares en donde hay pedazos de secuencias de hiv
+
+- Quéremos ver cuándo ocurrieron estas inserciones en la filogenia 
+
+1. Hacer alineamientos multiples 
+- pedazos de secuencias que solo se encuentran en sars cov 2 y no en los demás viruses 
+- huCoV2_who01 humano 
+- btzXc bioweapon 
+
+## ClustalX 
+
+font 24 
+
+
+**Para inferir filogienias sí los quiero **
+BtHKU9-1
+HuTGEV
+piPRCv
+PiSADS
+
+ctrl x
+Remove Gap only columns 
+
+GuNErs
+Cm 
+
+
+Edit cut sequences 
+remove gap only columns 
+
+2. Ahora tengo alineamientos 
+La secuecnia de interes es HuCoV2_who1_2019
+
+btrc-o319 Virus de murciélago pero aislado en japón, fue la primera secuecnia de cov2 que no viene de china 
+
+*Auskadis en japón, tailiandia, cambodia *
+btRacCS264
+""CS2644
+253
+224
+Sugiere que las inserciones ocurrieron después de la separación entre las cepas chinas y japonesas
+Tenemos una posición del spke protein en donde tenemos inserciones frecuentes 
+- se permiten inserciones pues no modifican mucho la estructura protéica 
+- Las inserciones tengan una ventaja evolutiva 
+  - la variación en los bucles no modifican la estructura de la proteína pero si le dan variabilidad a las partes más expuestas de la proteína 
+  - mutaciones evolutivamente ventajosas que permiten evitar la respuesta del sistema inmune 
+  
+  * perfectamente identica 
+  . muy cercanas del punto de vista bioquimico 
+  : conservado 
+  
+  
+  menos el peak profiler 
+  huSARSS-frankfurt es el del 2013 
+  los que no tienen fecha son de 2021
+  
+  **Duda**
+  BtZxc21
+  BtZC45
+
+
+BtRaTG13 es el más cercano al human 
+
+BtZxc21 hacia abajo son los más cercanos a cov2
+
+## Análisis de alineamiento 
+
+**Posicion 162**
+Evento único 
+HNN-K
+- quiza una deleción de nucleótido 
+V secuencia ancestral a V y M 
+PNGX panglonies de huandong 
+- Evento único de insercións seguido por divergencia por sustituciones 
+
+
+**Inserción en virus de murcielago**
+Cambodia y thailandia 
+
+
+**Inserción 270**
+
+Divergencia entre humano y murcielago 
+- BtZXC21 es más parecido a PnMP789
+- Inserciones que ocurrieron de manera natural y luego se separaron y divirgieron 
+
+
+## Árbol filogenético 
+
+
+phylogeny.fr/alacarte.cgi 
+
+ngphylogeny.fr
+
+A la carte 
+workflow name : spike protein en Cov2
+eliges para cada etapa 
+muscle 
+Gblocks
+phyMl
+newick display 
+
+Create workflow 
+
+Elegimos archivo de FASTA 
+
+
+MUSCLE
+  - se deja igual 
+
+
+## árbl filogenético 
+
+El último ancestro en cómun 
+
+El zen ancestro entre dos grupos 
+entre hume
+
+BTRTG13 es el primo más cercano que tenemos de  un primo de Sars Cov-2, no un ancestro  
+
+
+PRESTO- Phylogenetic tReE visualisation 
+
+Phylogram 
+  - la longitud de las ramas refleja la distancia evolutiva
+
+Dendrograma 
+  - todas las ramificaciones tienen la misma distancia 
+  - solo sirve para mostrar la sucrsión de las ramas 
+  
+
+Phylograma 
+- display branch length pero no hicimos el bootstrap 
+
+En cada rama podemos hacer swap - all desendant branches marca 
+
+## Recombinaciones 
+La RNa polimeraza empieza replicar el virus y salta a otro virus y sigue 
+pipprolifer.france-bioinformatique.fr
+
+
+mutacion en marzo en la posicion 614 de proteina spike 
+- en dos meses esta variante se remplazó por ella 
+- 
+BtYu-RMYN02 yunan (en donde esta la gruta en donde se infectaron los mineros )
+- Es un virus muy próximo al humano que se ignoras la parte de S es más parecido que el BtRaTG13
+- Porqué hay tanta mutación en este genoma 
+  - quizas porque se recombinó un virus próximo de ratg13 
+  
+  
+## Homework 
+use The file genomes_all.fasta
+- son 70 
+- Con este archivo cada estudiante elige un genoma que le va a servir de referencia que no sea HuCov-2
+  - sars de 2003
+  - mers
+  - pi 
+  - cerdo
+
+Tomamos un genoma de referencia y hacer un perfil de pip 
+  - Alinear todos los otros genomas con PIPprofileR
+  - Detectar regiones de recombinación 
+  - Comparar con PIP profile que se obtuvo al suar SARS-CoV-2 como referencia 
+
+NGPHYLOGENY.fr
+- Seleccióna otra proteina que no sea SPIKE
+- Escoge en data 
+- Infiere la filogenia de la familia de dicha proteína 
+- compara el árbol con la proteína Spike 
+- Qué concluyes ? 
+
+
+  
+
+

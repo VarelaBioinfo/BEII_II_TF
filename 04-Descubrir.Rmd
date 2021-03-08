@@ -121,4 +121,62 @@ default = -1 a -800
 - Report the results (max sig)
 
 
+Si elegimos un conjunto de genes que tienen regulación diversa entonces no se espera que tengamos motivos 
+- p valor nominal 
+  - estamos haciendo muchas pruebas estadísticas en paralelo 
+  - en promedio una palabra sobrerepresentada puede salir cada 1.79E-12
+  - probabilidad de observar algo tan extremo como lo que observamos 
+  - hipótesis nula 
+    - el promedio es igual entre las dos poblaciones 
+    - vamos a tomar una palabra a la vez 
+      - esta palabra en la población (el conjunto de todos los genes que responden al PHO en la levadura)
+      - la palabra tiene la misma frecuencia en los promotores de los genes PHO que en todos los otros promotores, la frecuencia de eventos en un esquema de bernoulli (exito es observar dicha palabra , fracaso es observar otra palabra) 
+  - Si yo hubiera seleccionado genes que no tienen 
+    - se rechaza la hipótesis null y generalemnte se toma un p-value de menos de 0.05%
 
+24 personas, una pistola , 1 bala 1 cargador
+  - 1/6 
+  - esperanza de estudiantes que no saldrán vivos 
+    - 24/6
+    - 4^6 nucleotidos son 4096 
+    - 4096/2 = 2048 pero hay 2080 por que tenemos 3^6 palabras reverse complementary palindromicas 
+      - 4096 palabras de 6 en total 4^3 reverese complementarias = 64
+        - 4096
+        -k = 6
+        - nb k-mers = 4096
+        - nb of palindroms = 4^6/2 = 64
+          - los impares no tienen palíndromos 
+        - nb of non-palindromic kmers 4096
+          - 4096-64= 
+- Rechazar la hipótesis nul cuando estamos en la hipotesis null = falso positivo 
+  - Nb distinct after RC grouping 2080 
+  - CAGCTG | CAGCTG
+  el evalor es el p valor por el número de pruebas que es 2080
+  significancia -log10 del e valor 
+    - si es alta tengo algo bueno 
+     - si está baja no es muy confiable 
+     - significancia de 1 se espera 1 vez entre 10 
+     - de 2 una vez entre 100
+     - cuando se incorporan genomas de la mitocondria puede tener sesgos 
+     - la composición nucleotídica de la mitocondria es muy distinta
+      - frecuencia de A y T muy grande 
+        - generalmente los promotores de mitocondria son ricos en ATTA
+
+- Gal4 factor no es significativo 
+  - Toca los dos puntos de contacto con una separación de bases 
+    - motivos separados 
+    - Cuentas las parejas de oligonucleotidos espaciadas con dyad-analysis result 
+      - analias todos los espacios posibles de 0 a 20 
+      cggn{12}cga
+      - Ensamblas las diadas y obtienes un score 
+      - para detectar motivos espaciados 
+    
+  - helix turn helix 
+    - toca dna en dos puntos de contacto y se esablecen interacciones moleculares 
+      - 
+1. conozco motivo 
+  - quiero escanar secuencia para busqueda de patrones conocidos 
+2. no conzco los motivos 
+    - se que están corregulados y quiero descubrirlos 
+3. Chi   
+      

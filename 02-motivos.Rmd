@@ -1,5 +1,7 @@
 # Práctica 1
 
+jacques.van-helden@univ-amu.fr
+
 [Ejercicios TF](http://jvanheld.github.io/LCG_BEII/practicals/motif_search_RegulonDB/motif_search_RegulonDB.html#collective_table_for_the_2020_practical)
 
 ## Introduction 

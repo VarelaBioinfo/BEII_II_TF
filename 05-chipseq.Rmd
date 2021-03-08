@@ -1,0 +1,129 @@
+# Peak-motifs 
+
+Permite analizar secuencias que son picos 
+
+## ChIP-Seq principle 
+
+- El factor se une a la secuecnia 
+- Fijas químicamente con formaldehido la proteína 
+- Utilizas sonificación que rompe el DNA en posiciones aleatorias 
+- Mediante inmunoprecipitación 
+- Cada factor viene con DNA
+- Quito la ligación 
+- Purifico el DNA para eliminar las proteínas 
+- Hago secuenciación 
+  - puedo marcar 
+
+> Integration of external signaling pathways with the core transcriptional network in embryonic stem cells 
+
+- Picos, lugares en donde más reads se alinean e indican sitios de unión de Factores de transcripción 
+- peak calling 
+  - Identificación de los picos en dicho paisaje 
+  
+Cuál es el control positivo 
+- importante para saber si el programa descubre lo que se espera
+- como demuestro que no se encuentre 
+Cuál es el control negativo 
+- elegir el buen control negativo es la mitad del arte 
+  
+## Peak-motifs
+
+Analizaremos un conjunto de regiones genómicas 
+- usualmente regiones intrónicas o intergénicas 
+- Trabajaremos con humano 
+  - generalmente la regulación es río arriba
+  - a veces hay río abajo 
+  - a veces alejados 
+- En eucariontes en donde hay mucho splicing 
+  - como en saccharomyces pombe 
+  - en humano en los intrones hay muchos sitios de regulación 
+- Se pueden comparar las regiones en donde se une el factore en diversas condiciones 
+  - enfermedad
+  - droga
+  - cultivo
+  - estrés 
+  - sobre la regulación transcripcional 
+- A veces tenemos un conjunto de picos de chip-seq caracterizados en condiciion1 vs otro en condición2 
+  - comparar los picos 
+
+### Estructura 
+
+peak sequences input
+1. Motif discovery
+  - podemos descubrir motivos 
+    - son del factor? 
+      - usaos oligoanalisis 
+    - una vez descubiertos vomparamos con base de datos de motivos conocidos 
+      - jaspar 
+      
+2. Predecir la posición de los sitios encontrados 
+  - Perfil de densidad de reads 
+  - escaneo con los motivos en el genoma 
+    - se visualiza el sitio 
+
+### k-mer over-representation 
+
+- Descurbir kmeros sobrerepresentados 
+  - observados vs esperados 
+- Position analysis
+  - Se buscan oligonucleótidos que tienen un sesgo de posición 
+    - que no están distribuidos de manera homogenea 
+      - los picos tienen tamaño diferente (200,300,400)
+      - calcula el numero de ocurrencias observado en cada ventana (50nt)
+        - hipotesis nula: distribución homogenea 
+          - chi^2 en cada ventana con un numero de grados de libertad que es el numero de ventanas -1 
+          - p valor es el pvalor por el numero de nucleotidos 
+          - significancia 
+
+
+seleccionar las primeras 500 secuencias
+cortar a 200 pares de bases 
+descubrir palabras con sesgo posicional 
+hexanucleotidos y heptanucleotios
+
+compare motifs 
+jaspar hocomoco
+
+
+markov orden 1 
+peak coordinates specified
+
+
+las partes del sombrero estan en el borde porque hay menos lecturas con tanta longitud 
+
+la de abajo muestra el evitamiento de CG 
+  - casi podemos tomarlo como que estamos en genoma de vertebrados con solo ver eso
+- descubrimiento de motivos 
+  - oct4 y sox2 forman un dímero pero ambas tienen un motivo distinto pero juntos 
+
+despues sacamos el archivo separado 
+
+
+
+## Tarea 
+Remap 
+1. Descargar picos para un factor en particular en downloads 
+
+1. Usar los factores de Chen integration of external signaling pathways with the core transcriptional 
+
+- Eligo Nanog 
+
+- ATF5 activating transcription factor 5 
+
+Tenemos un factor entonces un mismo factor pudo ser estudiado en vario stipos celulares, remap recolecta todo y bajan los datos brutos y aplican a todos los datos el mismo workflow
+15,000 picos es perfecto 
+elegir entre 2000 a 30,000 picos
+
+
+
+# Exploracion de las longitudes de los picos 
+CCCCACCC motivo de baja complejidad para el que no sirve la permutación de columnas 
+
+Origenes de replicación humano 
+
+- GGGGG y luego ría abajo CCCCC
+
+que el motivo esté muy concentrado en medio 
+mientras más concnetrado entonces los factores de transcripción está descrito 
+
+- Sí 
